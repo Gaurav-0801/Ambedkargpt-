@@ -12,3 +12,4 @@ pyyaml
 typer
 rich
 tiktoken
+pytest
