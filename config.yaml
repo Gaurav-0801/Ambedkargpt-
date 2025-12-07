@@ -1,0 +1,42 @@
+paths:
+  pdf: data/Ambedkar_book.pdf
+  chunks: data/processed/chunks.json
+  graph: data/processed/knowledge_graph.pkl
+  node_index: data/processed/node_index.json
+  community_partition: data/processed/community_partition.json
+  community_reports: data/processed/community_reports.json
+
+embeddings:
+  sentence_model: all-MiniLM-L6-v2
+  batch_size: 16
+
+chunking:
+  threshold: 0.28          # cosine distance (1 - cosine similarity)
+  buffer_size: 2
+  max_tokens: 1024
+  sub_chunk_tokens: 128
+  overlap_tokens: 128
+
+graph:
+  min_entity_length: 3
+  allow_types:
+    - PERSON
+    - ORG
+    - GPE
+    - WORK_OF_ART
+    - EVENT
+  relation_window: 2
+
+retrieval:
+  tau_entity: 0.35
+  tau_chunk: 0.3
+  top_k_entities: 8
+  top_k_chunks: 5
+  top_k_communities: 3
+  top_k_points: 5
+
+llm:
+  model: llama3
+  temperature: 0.2
+  max_tokens: 512
+

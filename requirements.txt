@@ -1,0 +1,14 @@
+sentence-transformers
+scikit-learn
+spacy
+pypdf
+networkx
+python-louvain
+ollama
+langchain
+nltk
+numpy
+pyyaml
+typer
+rich
+tiktoken
