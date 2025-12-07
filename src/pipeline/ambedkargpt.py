@@ -6,11 +6,11 @@ import typer
 from rich.console import Console
 from rich.prompt import Prompt
 
-from chunking import semantic_chunker
-from graph import community_detector, graph_builder, summarizer
-from llm.answer_generator import AnswerGenerator
-from retrieval.global_search import GlobalGraphRAG
-from retrieval.local_search import LocalGraphRAG
+from src.chunking import semantic_chunker
+from src.graph import community_detector, graph_builder, summarizer
+from src.llm.answer_generator import AnswerGenerator
+from src.retrieval.global_search import GlobalGraphRAG
+from src.retrieval.local_search import LocalGraphRAG
 
 app = typer.Typer(no_args_is_help=True)
 console = Console()

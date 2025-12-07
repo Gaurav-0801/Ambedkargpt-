@@ -15,7 +15,7 @@ from rich.console import Console
 from rich.progress import track
 from sentence_transformers import SentenceTransformer
 
-from chunking.buffer_merger import buffer_merge
+from .buffer_merger import buffer_merge
 
 nltk.download("punkt", quiet=True)
 
