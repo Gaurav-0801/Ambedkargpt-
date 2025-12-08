@@ -1,0 +1,6361 @@
+{
+  "entities": [
+    {
+      "entity": "Genesis",
+      "label": "ORG",
+      "count": 2,
+      "pages": [
+        1,
+        3
+      ],
+      "chunks": [
+        "chunk_0"
+      ]
+    },
+    {
+      "entity": "Development Paper",
+      "label": "ORG",
+      "count": 3,
+      "pages": [
+        1,
+        3
+      ],
+      "chunks": [
+        "chunk_0"
+      ]
+    },
+    {
+      "entity": "the Anthropology Seminar of Dr. A. A. Goldenweizer",
+      "label": "EVENT",
+      "count": 3,
+      "pages": [
+        1,
+        3
+      ],
+      "chunks": [
+        "chunk_0"
+      ]
+    },
+    {
+      "entity": "The Columbia University",
+      "label": "ORG",
+      "count": 4,
+      "pages": [
+        1,
+        3
+      ],
+      "chunks": [
+        "chunk_0"
+      ]
+    },
+    {
+      "entity": "New York",
+      "label": "GPE",
+      "count": 4,
+      "pages": [
+        1,
+        3
+      ],
+      "chunks": [
+        "chunk_0"
+      ]
+    },
+    {
+      "entity": "U.S.A.",
+      "label": "GPE",
+      "count": 4,
+      "pages": [
+        1,
+        3
+      ],
+      "chunks": [
+        "chunk_0"
+      ]
+    },
+    {
+      "entity": "Indian Antiquary",
+      "label": "PERSON",
+      "count": 4,
+      "pages": [
+        1,
+        3
+      ],
+      "chunks": [
+        "chunk_0"
+      ]
+    },
+    {
+      "entity": "A. Goldenweizer",
+      "label": "PERSON",
+      "count": 1,
+      "pages": [
+        1,
+        3
+      ],
+      "chunks": [
+        "chunk_0"
+      ]
+    },
+    {
+      "entity": "Subtler",
+      "label": "ORG",
+      "count": 1,
+      "pages": [
+        3,
+        4
+      ],
+      "chunks": [
+        "chunk_3"
+      ]
+    },
+    {
+      "entity": "Caste",
+      "label": "PERSON",
+      "count": 933,
+      "pages": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        30,
+        31,
+        40,
+        41,
+        45,
+        46,
+        47,
+        48,
+        50,
+        51,
+        52,
+        54,
+        55,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        75,
+        78,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        90,
+        91,
+        92,
+        93
+      ],
+      "chunks": [
+        "chunk_10",
+        "chunk_11",
+        "chunk_12",
+        "chunk_13",
+        "chunk_137",
+        "chunk_138",
+        "chunk_14",
+        "chunk_15",
+        "chunk_154",
+        "chunk_156",
+        "chunk_157",
+        "chunk_158",
+        "chunk_159",
+        "chunk_16",
+        "chunk_162",
+        "chunk_163",
+        "chunk_164",
+        "chunk_165",
+        "chunk_17",
+        "chunk_174",
+        "chunk_175",
+        "chunk_176",
+        "chunk_177",
+        "chunk_178",
+        "chunk_18",
+        "chunk_182",
+        "chunk_189",
+        "chunk_19",
+        "chunk_190",
+        "chunk_2",
+        "chunk_20",
+        "chunk_21",
+        "chunk_22",
+        "chunk_228",
+        "chunk_23",
+        "chunk_235",
+        "chunk_236",
+        "chunk_237",
+        "chunk_238",
+        "chunk_239",
+        "chunk_24",
+        "chunk_242",
+        "chunk_243",
+        "chunk_244",
+        "chunk_247",
+        "chunk_248",
+        "chunk_25",
+        "chunk_252",
+        "chunk_255",
+        "chunk_256",
+        "chunk_257",
+        "chunk_258",
+        "chunk_259",
+        "chunk_26",
+        "chunk_262",
+        "chunk_263",
+        "chunk_264",
+        "chunk_265",
+        "chunk_267",
+        "chunk_268",
+        "chunk_27",
+        "chunk_28",
+        "chunk_281",
+        "chunk_296",
+        "chunk_298",
+        "chunk_3",
+        "chunk_309",
+        "chunk_315",
+        "chunk_317",
+        "chunk_318",
+        "chunk_319",
+        "chunk_321",
+        "chunk_322",
+        "chunk_323",
+        "chunk_324",
+        "chunk_325",
+        "chunk_326",
+        "chunk_327",
+        "chunk_330",
+        "chunk_331",
+        "chunk_332",
+        "chunk_333",
+        "chunk_335",
+        "chunk_336",
+        "chunk_342",
+        "chunk_343",
+        "chunk_344",
+        "chunk_345",
+        "chunk_346",
+        "chunk_347",
+        "chunk_349",
+        "chunk_35",
+        "chunk_350",
+        "chunk_355",
+        "chunk_356",
+        "chunk_357",
+        "chunk_36",
+        "chunk_37",
+        "chunk_38",
+        "chunk_41",
+        "chunk_42",
+        "chunk_5",
+        "chunk_6",
+        "chunk_64",
+        "chunk_65",
+        "chunk_66",
+        "chunk_67",
+        "chunk_68",
+        "chunk_69",
+        "chunk_7",
+        "chunk_70",
+        "chunk_71",
+        "chunk_75",
+        "chunk_76",
+        "chunk_77",
+        "chunk_8",
+        "chunk_9",
+        "chunk_94",
+        "chunk_95",
+        "chunk_96"
+      ]
+    },
+    {
+      "entity": "India",
+      "label": "GPE",
+      "count": 390,
+      "pages": [
+        3,
+        4,
+        6,
+        7,
+        8,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        23,
+        24,
+        35,
+        36,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        56,
+        57,
+        60,
+        61,
+        63,
+        64,
+        69,
+        75,
+        82,
+        86,
+        87
+      ],
+      "chunks": [
+        "chunk_116",
+        "chunk_13",
+        "chunk_135",
+        "chunk_136",
+        "chunk_137",
+        "chunk_14",
+        "chunk_142",
+        "chunk_143",
+        "chunk_144",
+        "chunk_146",
+        "chunk_147",
+        "chunk_148",
+        "chunk_149",
+        "chunk_15",
+        "chunk_150",
+        "chunk_151",
+        "chunk_152",
+        "chunk_153",
+        "chunk_154",
+        "chunk_157",
+        "chunk_158",
+        "chunk_159",
+        "chunk_16",
+        "chunk_160",
+        "chunk_161",
+        "chunk_167",
+        "chunk_168",
+        "chunk_17",
+        "chunk_175",
+        "chunk_176",
+        "chunk_182",
+        "chunk_197",
+        "chunk_198",
+        "chunk_214",
+        "chunk_215",
+        "chunk_216",
+        "chunk_229",
+        "chunk_230",
+        "chunk_253",
+        "chunk_254",
+        "chunk_279",
+        "chunk_280",
+        "chunk_29",
+        "chunk_3",
+        "chunk_30",
+        "chunk_314",
+        "chunk_315",
+        "chunk_327",
+        "chunk_328",
+        "chunk_330",
+        "chunk_35",
+        "chunk_36",
+        "chunk_37",
+        "chunk_38",
+        "chunk_39",
+        "chunk_4",
+        "chunk_40",
+        "chunk_41",
+        "chunk_45",
+        "chunk_46",
+        "chunk_47",
+        "chunk_48",
+        "chunk_49",
+        "chunk_5",
+        "chunk_52",
+        "chunk_53",
+        "chunk_56",
+        "chunk_57",
+        "chunk_60",
+        "chunk_61",
+        "chunk_63",
+        "chunk_65",
+        "chunk_66",
+        "chunk_67",
+        "chunk_68",
+        "chunk_69",
+        "chunk_74"
+      ]
+    },
+    {
+      "entity": "Mongolians",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        4
+      ],
+      "chunks": [
+        "chunk_4"
+      ]
+    },
+    {
+      "entity": "Ketkar",
+      "label": "PERSON",
+      "count": 30,
+      "pages": [
+        4,
+        5,
+        6,
+        11,
+        12,
+        19,
+        20
+      ],
+      "chunks": [
+        "chunk_11",
+        "chunk_12",
+        "chunk_31",
+        "chunk_32",
+        "chunk_6",
+        "chunk_66",
+        "chunk_67",
+        "chunk_7",
+        "chunk_8"
+      ]
+    },
+    {
+      "entity": "Castes",
+      "label": "PERSON",
+      "count": 47,
+      "pages": [
+        5,
+        6,
+        19,
+        20,
+        46,
+        47,
+        48,
+        52,
+        53,
+        65,
+        66
+      ],
+      "chunks": [
+        "chunk_159",
+        "chunk_160",
+        "chunk_161",
+        "chunk_162",
+        "chunk_163",
+        "chunk_164",
+        "chunk_183",
+        "chunk_234",
+        "chunk_235",
+        "chunk_236",
+        "chunk_67",
+        "chunk_68",
+        "chunk_8",
+        "chunk_9"
+      ]
+    },
+    {
+      "entity": "Nesfield",
+      "label": "PERSON",
+      "count": 35,
+      "pages": [
+        4,
+        5,
+        6,
+        15,
+        16
+      ],
+      "chunks": [
+        "chunk_10",
+        "chunk_11",
+        "chunk_47",
+        "chunk_48",
+        "chunk_49",
+        "chunk_50",
+        "chunk_6",
+        "chunk_7",
+        "chunk_8",
+        "chunk_9"
+      ]
+    },
+    {
+      "entity": "Prohibition of Intermarriage",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        6
+      ],
+      "chunks": [
+        "chunk_12"
+      ]
+    },
+    {
+      "entity": "Autogeny",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        6
+      ],
+      "chunks": [
+        "chunk_12"
+      ]
+    },
+    {
+      "entity": "Negroes",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        6,
+        7
+      ],
+      "chunks": [
+        "chunk_13"
+      ]
+    },
+    {
+      "entity": "Whites",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        6,
+        7
+      ],
+      "chunks": [
+        "chunk_13"
+      ]
+    },
+    {
+      "entity": "the United States",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        6,
+        7
+      ],
+      "chunks": [
+        "chunk_13"
+      ]
+    },
+    {
+      "entity": "INDIA",
+      "label": "GPE",
+      "count": 20,
+      "pages": [
+        6,
+        7,
+        8,
+        9,
+        14,
+        15,
+        18,
+        19
+      ],
+      "chunks": [
+        "chunk_13",
+        "chunk_14",
+        "chunk_21",
+        "chunk_45",
+        "chunk_46",
+        "chunk_63",
+        "chunk_64"
+      ]
+    },
+    {
+      "entity": "Endogamy",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        6,
+        7
+      ],
+      "chunks": [
+        "chunk_14"
+      ]
+    },
+    {
+      "entity": "Gotras",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        7,
+        8
+      ],
+      "chunks": [
+        "chunk_16",
+        "chunk_17"
+      ]
+    },
+    {
+      "entity": "Grahastha",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        10
+      ],
+      "chunks": [
+        "chunk_26",
+        "chunk_27"
+      ]
+    },
+    {
+      "entity": "Sanskrit",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        10,
+        48
+      ],
+      "chunks": [
+        "chunk_166",
+        "chunk_26",
+        "chunk_27"
+      ]
+    },
+    {
+      "entity": "Sati",
+      "label": "ORG",
+      "count": 15,
+      "pages": [
+        11,
+        12,
+        17,
+        18
+      ],
+      "chunks": [
+        "chunk_30",
+        "chunk_31",
+        "chunk_35",
+        "chunk_60"
+      ]
+    },
+    {
+      "entity": "A. K. Coomaraswamy",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        11,
+        12
+      ],
+      "chunks": [
+        "chunk_31",
+        "chunk_32"
+      ]
+    },
+    {
+      "entity": "the British Sociological Review",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        11,
+        12
+      ],
+      "chunks": [
+        "chunk_31",
+        "chunk_32"
+      ]
+    },
+    {
+      "entity": "Vol",
+      "label": "PERSON",
+      "count": 1,
+      "pages": [
+        11
+      ],
+      "chunks": [
+        "chunk_31"
+      ]
+    },
+    {
+      "entity": "Uma",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        11,
+        12
+      ],
+      "chunks": [
+        "chunk_31",
+        "chunk_32"
+      ]
+    },
+    {
+      "entity": "the Origin of Caste",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        12,
+        13
+      ],
+      "chunks": [
+        "chunk_36"
+      ]
+    },
+    {
+      "entity": "Origin",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        12,
+        13
+      ],
+      "chunks": [
+        "chunk_36"
+      ]
+    },
+    {
+      "entity": "The Origin of the Mechanism for Endogamy",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        12,
+        13
+      ],
+      "chunks": [
+        "chunk_36"
+      ]
+    },
+    {
+      "entity": "pp.",
+      "label": "GPE",
+      "count": 1,
+      "pages": [
+        12,
+        13
+      ],
+      "chunks": [
+        "chunk_36"
+      ]
+    },
+    {
+      "entity": "Manu",
+      "label": "PERSON",
+      "count": 70,
+      "pages": [
+        13,
+        14,
+        60,
+        61,
+        69,
+        70,
+        71,
+        72
+      ],
+      "chunks": [
+        "chunk_214",
+        "chunk_255",
+        "chunk_256",
+        "chunk_259",
+        "chunk_260",
+        "chunk_261",
+        "chunk_262",
+        "chunk_265",
+        "chunk_266",
+        "chunk_40",
+        "chunk_41",
+        "chunk_42",
+        "chunk_43"
+      ]
+    },
+    {
+      "entity": "the Hindu Society",
+      "label": "ORG",
+      "count": 50,
+      "pages": [
+        4,
+        5,
+        11,
+        14,
+        15,
+        16,
+        17,
+        35,
+        36,
+        39,
+        40,
+        56,
+        57,
+        61,
+        62,
+        78,
+        79,
+        84,
+        85
+      ],
+      "chunks": [
+        "chunk_116",
+        "chunk_117",
+        "chunk_132",
+        "chunk_198",
+        "chunk_199",
+        "chunk_220",
+        "chunk_221",
+        "chunk_299",
+        "chunk_30",
+        "chunk_321",
+        "chunk_322",
+        "chunk_45",
+        "chunk_5",
+        "chunk_55",
+        "chunk_56",
+        "chunk_6"
+      ]
+    },
+    {
+      "entity": "the Caste System",
+      "label": "WORK_OF_ART",
+      "count": 155,
+      "pages": [
+        14,
+        15,
+        25,
+        26,
+        30,
+        31,
+        39,
+        40,
+        45,
+        46,
+        47,
+        48,
+        50,
+        51,
+        52,
+        55,
+        56,
+        57,
+        58,
+        62,
+        70,
+        85,
+        91
+      ],
+      "chunks": [
+        "chunk_132",
+        "chunk_154",
+        "chunk_155",
+        "chunk_156",
+        "chunk_157",
+        "chunk_158",
+        "chunk_162",
+        "chunk_164",
+        "chunk_165",
+        "chunk_174",
+        "chunk_175",
+        "chunk_176",
+        "chunk_182",
+        "chunk_194",
+        "chunk_195",
+        "chunk_201",
+        "chunk_202",
+        "chunk_222",
+        "chunk_257",
+        "chunk_258",
+        "chunk_259",
+        "chunk_324",
+        "chunk_345",
+        "chunk_45",
+        "chunk_78",
+        "chunk_79",
+        "chunk_80",
+        "chunk_94",
+        "chunk_95",
+        "chunk_96",
+        "chunk_97"
+      ]
+    },
+    {
+      "entity": "Denzil Ibbetson",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        15
+      ],
+      "chunks": [
+        "chunk_47",
+        "chunk_48"
+      ]
+    },
+    {
+      "entity": "Senart",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        4,
+        5,
+        6,
+        15
+      ],
+      "chunks": [
+        "chunk_47",
+        "chunk_48",
+        "chunk_6",
+        "chunk_7",
+        "chunk_8",
+        "chunk_9"
+      ]
+    },
+    {
+      "entity": "H. Risley",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        4,
+        5,
+        6,
+        15
+      ],
+      "chunks": [
+        "chunk_11",
+        "chunk_47",
+        "chunk_48",
+        "chunk_7",
+        "chunk_8"
+      ]
+    },
+    {
+      "entity": "Kshatriya",
+      "label": "ORG",
+      "count": 45,
+      "pages": [
+        15,
+        16,
+        57,
+        59,
+        60,
+        61,
+        62
+      ],
+      "chunks": [
+        "chunk_199",
+        "chunk_209",
+        "chunk_210",
+        "chunk_211",
+        "chunk_212",
+        "chunk_213",
+        "chunk_214",
+        "chunk_220",
+        "chunk_221",
+        "chunk_49",
+        "chunk_50",
+        "chunk_51"
+      ]
+    },
+    {
+      "entity": "Vaishya",
+      "label": "GPE",
+      "count": 45,
+      "pages": [
+        15,
+        16,
+        56,
+        57,
+        59,
+        60,
+        88
+      ],
+      "chunks": [
+        "chunk_198",
+        "chunk_199",
+        "chunk_200",
+        "chunk_201",
+        "chunk_207",
+        "chunk_208",
+        "chunk_209",
+        "chunk_211",
+        "chunk_335",
+        "chunk_49",
+        "chunk_50"
+      ]
+    },
+    {
+      "entity": "Shudra",
+      "label": "ORG",
+      "count": 66,
+      "pages": [
+        15,
+        16,
+        58,
+        59,
+        60
+      ],
+      "chunks": [
+        "chunk_206",
+        "chunk_207",
+        "chunk_209",
+        "chunk_210",
+        "chunk_211",
+        "chunk_213",
+        "chunk_49",
+        "chunk_50"
+      ]
+    },
+    {
+      "entity": "Tarde",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        16,
+        17,
+        18
+      ],
+      "chunks": [
+        "chunk_54",
+        "chunk_55",
+        "chunk_60",
+        "chunk_61"
+      ]
+    },
+    {
+      "entity": "Group A",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        18,
+        19
+      ],
+      "chunks": [
+        "chunk_63",
+        "chunk_64"
+      ]
+    },
+    {
+      "entity": "Group B",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        18,
+        19
+      ],
+      "chunks": [
+        "chunk_63",
+        "chunk_64"
+      ]
+    },
+    {
+      "entity": "Mahatma Gandhi",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        20,
+        21,
+        23,
+        66,
+        67
+      ],
+      "chunks": [
+        "chunk_239",
+        "chunk_240",
+        "chunk_71"
+      ]
+    },
+    {
+      "entity": "Truth",
+      "label": "GPE",
+      "count": 15,
+      "pages": [
+        20,
+        21,
+        23,
+        81,
+        82,
+        91
+      ],
+      "chunks": [
+        "chunk_311",
+        "chunk_312",
+        "chunk_346",
+        "chunk_71"
+      ]
+    },
+    {
+      "entity": "Untruth as Untruth",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        20,
+        21,
+        23
+      ],
+      "chunks": [
+        "chunk_71"
+      ]
+    },
+    {
+      "entity": "DARE",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        20,
+        21,
+        23
+      ],
+      "chunks": [
+        "chunk_71"
+      ]
+    },
+    {
+      "entity": "Gujarati",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        20,
+        21,
+        23
+      ],
+      "chunks": [
+        "chunk_71",
+        "chunk_72",
+        "chunk_73"
+      ]
+    },
+    {
+      "entity": "Tamil",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        20,
+        21,
+        23
+      ],
+      "chunks": [
+        "chunk_71",
+        "chunk_72",
+        "chunk_73"
+      ]
+    },
+    {
+      "entity": "Marathi",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        20,
+        21,
+        23,
+        35
+      ],
+      "chunks": [
+        "chunk_111",
+        "chunk_112",
+        "chunk_71",
+        "chunk_72",
+        "chunk_73"
+      ]
+    },
+    {
+      "entity": "Malayalam",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        20,
+        21,
+        23
+      ],
+      "chunks": [
+        "chunk_71",
+        "chunk_72",
+        "chunk_73"
+      ]
+    },
+    {
+      "entity": "Appendix",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        23
+      ],
+      "chunks": [
+        "chunk_73"
+      ]
+    },
+    {
+      "entity": "Gandhi",
+      "label": "PERSON",
+      "count": 20,
+      "pages": [
+        23,
+        24
+      ],
+      "chunks": [
+        "chunk_73",
+        "chunk_74"
+      ]
+    },
+    {
+      "entity": "Harijan",
+      "label": "GPE",
+      "count": 25,
+      "pages": [
+        23,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "chunks": [
+        "chunk_305",
+        "chunk_306",
+        "chunk_313",
+        "chunk_314",
+        "chunk_318",
+        "chunk_319",
+        "chunk_73"
+      ]
+    },
+    {
+      "entity": "Sant Ram",
+      "label": "PERSON",
+      "count": 49,
+      "pages": [
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        30,
+        31,
+        83,
+        84,
+        91
+      ],
+      "chunks": [
+        "chunk_317",
+        "chunk_318",
+        "chunk_346",
+        "chunk_73",
+        "chunk_75",
+        "chunk_76",
+        "chunk_81",
+        "chunk_85",
+        "chunk_94",
+        "chunk_95"
+      ]
+    },
+    {
+      "entity": "Appendix I. Considerations",
+      "label": "ORG",
+      "count": 1,
+      "pages": [
+        23
+      ],
+      "chunks": [
+        "chunk_73"
+      ]
+    },
+    {
+      "entity": "Appendix I. Besides",
+      "label": "PERSON",
+      "count": 4,
+      "pages": [
+        23
+      ],
+      "chunks": [
+        "chunk_73"
+      ]
+    },
+    {
+      "entity": "Castes in India",
+      "label": "WORK_OF_ART",
+      "count": 5,
+      "pages": [
+        23,
+        24,
+        25
+      ],
+      "chunks": [
+        "chunk_74",
+        "chunk_75"
+      ]
+    },
+    {
+      "entity": "the Indian Antiquary Journal",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        23,
+        24,
+        25
+      ],
+      "chunks": [
+        "chunk_74",
+        "chunk_75"
+      ]
+    },
+    {
+      "entity": "Prithwiraj Road B. R.",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        24,
+        25
+      ],
+      "chunks": [
+        "chunk_75",
+        "chunk_76"
+      ]
+    },
+    {
+      "entity": "New Delhi",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        24,
+        25
+      ],
+      "chunks": [
+        "chunk_75",
+        "chunk_76"
+      ]
+    },
+    {
+      "entity": "Kranti",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        24,
+        25
+      ],
+      "chunks": [
+        "chunk_76",
+        "chunk_77"
+      ]
+    },
+    {
+      "entity": "Conferences",
+      "label": "ORG",
+      "count": 1,
+      "pages": [
+        24,
+        25
+      ],
+      "chunks": [
+        "chunk_76"
+      ]
+    },
+    {
+      "entity": "Indra Singh",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        25
+      ],
+      "chunks": [
+        "chunk_78"
+      ]
+    },
+    {
+      "entity": "Bombay",
+      "label": "GPE",
+      "count": 90,
+      "pages": [
+        25,
+        26,
+        27,
+        28,
+        31,
+        32,
+        33,
+        34,
+        35,
+        51,
+        52
+      ],
+      "chunks": [
+        "chunk_104",
+        "chunk_108",
+        "chunk_109",
+        "chunk_112",
+        "chunk_179",
+        "chunk_180",
+        "chunk_78",
+        "chunk_79",
+        "chunk_80",
+        "chunk_81",
+        "chunk_83",
+        "chunk_84",
+        "chunk_85",
+        "chunk_86",
+        "chunk_99"
+      ]
+    },
+    {
+      "entity": "Xmas",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        25
+      ],
+      "chunks": [
+        "chunk_78"
+      ]
+    },
+    {
+      "entity": "Caste Hindu Social Reformers",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        25,
+        26
+      ],
+      "chunks": [
+        "chunk_78",
+        "chunk_79"
+      ]
+    },
+    {
+      "entity": "The Annual Conference",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        25,
+        26
+      ],
+      "chunks": [
+        "chunk_79"
+      ]
+    },
+    {
+      "entity": "Lahore",
+      "label": "GPE",
+      "count": 75,
+      "pages": [
+        20,
+        21,
+        23,
+        25,
+        26,
+        27,
+        28,
+        29,
+        33,
+        34,
+        35,
+        78,
+        79,
+        81,
+        82
+      ],
+      "chunks": [
+        "chunk_109",
+        "chunk_299",
+        "chunk_300",
+        "chunk_313",
+        "chunk_314",
+        "chunk_71",
+        "chunk_72",
+        "chunk_78",
+        "chunk_79",
+        "chunk_80",
+        "chunk_81",
+        "chunk_83",
+        "chunk_84",
+        "chunk_85",
+        "chunk_87",
+        "chunk_88"
+      ]
+    },
+    {
+      "entity": "Bhai Parmanand",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        26,
+        27
+      ],
+      "chunks": [
+        "chunk_81",
+        "chunk_82"
+      ]
+    },
+    {
+      "entity": "Hindu Maha Sabha",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        26,
+        27
+      ],
+      "chunks": [
+        "chunk_81",
+        "chunk_82"
+      ]
+    },
+    {
+      "entity": "Mahatma Hans Raj",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        26,
+        27
+      ],
+      "chunks": [
+        "chunk_81",
+        "chunk_82"
+      ]
+    },
+    {
+      "entity": "Gokal Chand",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        26,
+        27
+      ],
+      "chunks": [
+        "chunk_81",
+        "chunk_82",
+        "chunk_83"
+      ]
+    },
+    {
+      "entity": "Narendra Nath",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        26,
+        27
+      ],
+      "chunks": [
+        "chunk_81",
+        "chunk_82"
+      ]
+    },
+    {
+      "entity": "M.L.C.",
+      "label": "GPE",
+      "count": 4,
+      "pages": [
+        26,
+        27
+      ],
+      "chunks": [
+        "chunk_81",
+        "chunk_82"
+      ]
+    },
+    {
+      "entity": "Ambedkar",
+      "label": "PERSON",
+      "count": 135,
+      "pages": [
+        26,
+        27,
+        28,
+        29,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84
+      ],
+      "chunks": [
+        "chunk_299",
+        "chunk_300",
+        "chunk_301",
+        "chunk_302",
+        "chunk_303",
+        "chunk_304",
+        "chunk_305",
+        "chunk_306",
+        "chunk_311",
+        "chunk_312",
+        "chunk_313",
+        "chunk_314",
+        "chunk_316",
+        "chunk_317",
+        "chunk_318",
+        "chunk_82",
+        "chunk_83",
+        "chunk_87",
+        "chunk_88"
+      ]
+    },
+    {
+      "entity": "Har Bhagwan",
+      "label": "PERSON",
+      "count": 25,
+      "pages": [
+        27,
+        28,
+        29,
+        30
+      ],
+      "chunks": [
+        "chunk_83",
+        "chunk_84",
+        "chunk_87",
+        "chunk_88",
+        "chunk_92",
+        "chunk_93"
+      ]
+    },
+    {
+      "entity": "Sahib",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        27,
+        28
+      ],
+      "chunks": [
+        "chunk_84",
+        "chunk_85"
+      ]
+    },
+    {
+      "entity": "Veda",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        27,
+        28,
+        70,
+        71
+      ],
+      "chunks": [
+        "chunk_259",
+        "chunk_260",
+        "chunk_85",
+        "chunk_86"
+      ]
+    },
+    {
+      "entity": "the Reception Committee of the Jat-Pat-Todak Mandal",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        30
+      ],
+      "chunks": [
+        "chunk_93"
+      ]
+    },
+    {
+      "entity": "Conference",
+      "label": "ORG",
+      "count": 40,
+      "pages": [
+        28,
+        29,
+        30,
+        32,
+        33,
+        36
+      ],
+      "chunks": [
+        "chunk_104",
+        "chunk_105",
+        "chunk_117",
+        "chunk_87",
+        "chunk_88",
+        "chunk_91",
+        "chunk_92",
+        "chunk_93"
+      ]
+    },
+    {
+      "entity": "Mandal",
+      "label": "ORG",
+      "count": 15,
+      "pages": [
+        26,
+        27,
+        32,
+        33
+      ],
+      "chunks": [
+        "chunk_104",
+        "chunk_105",
+        "chunk_82",
+        "chunk_83"
+      ]
+    },
+    {
+      "entity": "the Sikh Prachar Conference",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        32,
+        33
+      ],
+      "chunks": [
+        "chunk_105",
+        "chunk_106"
+      ]
+    },
+    {
+      "entity": "Amritsar",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        27,
+        28,
+        32,
+        33
+      ],
+      "chunks": [
+        "chunk_105",
+        "chunk_106",
+        "chunk_84",
+        "chunk_85"
+      ]
+    },
+    {
+      "entity": "Committee",
+      "label": "ORG",
+      "count": 60,
+      "pages": [
+        30,
+        31,
+        32,
+        33,
+        78,
+        79
+      ],
+      "chunks": [
+        "chunk_101",
+        "chunk_102",
+        "chunk_104",
+        "chunk_105",
+        "chunk_106",
+        "chunk_107",
+        "chunk_300",
+        "chunk_94",
+        "chunk_95",
+        "chunk_96"
+      ]
+    },
+    {
+      "entity": "Caste Hindus",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        33,
+        34,
+        35
+      ],
+      "chunks": [
+        "chunk_107",
+        "chunk_108"
+      ]
+    },
+    {
+      "entity": "Untouchables",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        33,
+        34,
+        35
+      ],
+      "chunks": [
+        "chunk_108"
+      ]
+    },
+    {
+      "entity": "Rajgriha",
+      "label": "PERSON",
+      "count": 4,
+      "pages": [
+        33,
+        34,
+        35
+      ],
+      "chunks": [
+        "chunk_108"
+      ]
+    },
+    {
+      "entity": "Dadar",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        33,
+        34,
+        35
+      ],
+      "chunks": [
+        "chunk_108",
+        "chunk_109"
+      ]
+    },
+    {
+      "entity": "B.R.",
+      "label": "GPE",
+      "count": 10,
+      "pages": [
+        33,
+        34,
+        35,
+        83,
+        84
+      ],
+      "chunks": [
+        "chunk_108",
+        "chunk_109",
+        "chunk_318",
+        "chunk_319"
+      ]
+    },
+    {
+      "entity": "the Reception Committee",
+      "label": "ORG",
+      "count": 35,
+      "pages": [
+        28,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        78,
+        79
+      ],
+      "chunks": [
+        "chunk_101",
+        "chunk_102",
+        "chunk_107",
+        "chunk_108",
+        "chunk_109",
+        "chunk_299",
+        "chunk_300",
+        "chunk_301",
+        "chunk_86",
+        "chunk_87",
+        "chunk_94"
+      ]
+    },
+    {
+      "entity": "Speech",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        33,
+        34,
+        35
+      ],
+      "chunks": [
+        "chunk_108",
+        "chunk_109"
+      ]
+    },
+    {
+      "entity": "Ramdas",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        35
+      ],
+      "chunks": [
+        "chunk_111",
+        "chunk_112"
+      ]
+    },
+    {
+      "entity": "Brahmin",
+      "label": "PERSON",
+      "count": 170,
+      "pages": [
+        13,
+        14,
+        16,
+        17,
+        18,
+        35,
+        50,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        68,
+        69,
+        81,
+        85,
+        88,
+        89,
+        93
+      ],
+      "chunks": [
+        "chunk_111",
+        "chunk_112",
+        "chunk_173",
+        "chunk_174",
+        "chunk_190",
+        "chunk_191",
+        "chunk_198",
+        "chunk_199",
+        "chunk_200",
+        "chunk_206",
+        "chunk_207",
+        "chunk_208",
+        "chunk_209",
+        "chunk_210",
+        "chunk_211",
+        "chunk_212",
+        "chunk_213",
+        "chunk_214",
+        "chunk_220",
+        "chunk_221",
+        "chunk_251",
+        "chunk_252",
+        "chunk_253",
+        "chunk_254",
+        "chunk_310",
+        "chunk_324",
+        "chunk_325",
+        "chunk_335",
+        "chunk_336",
+        "chunk_337",
+        "chunk_338",
+        "chunk_355",
+        "chunk_356",
+        "chunk_38",
+        "chunk_39",
+        "chunk_42",
+        "chunk_43",
+        "chunk_52",
+        "chunk_56",
+        "chunk_57",
+        "chunk_61"
+      ]
+    },
+    {
+      "entity": "Shivaji",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        35,
+        42,
+        50
+      ],
+      "chunks": [
+        "chunk_111",
+        "chunk_112",
+        "chunk_142",
+        "chunk_174"
+      ]
+    },
+    {
+      "entity": "Dasbodh",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        35
+      ],
+      "chunks": [
+        "chunk_111",
+        "chunk_112"
+      ]
+    },
+    {
+      "entity": "Antyaja",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        35
+      ],
+      "chunks": [
+        "chunk_111",
+        "chunk_112"
+      ]
+    },
+    {
+      "entity": "Guru",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        35
+      ],
+      "chunks": [
+        "chunk_111",
+        "chunk_112"
+      ]
+    },
+    {
+      "entity": "Savarnas",
+      "label": "ORG",
+      "count": 15,
+      "pages": [
+        35,
+        80
+      ],
+      "chunks": [
+        "chunk_112",
+        "chunk_304",
+        "chunk_305"
+      ]
+    },
+    {
+      "entity": "the National Congress",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        35,
+        36
+      ],
+      "chunks": [
+        "chunk_116",
+        "chunk_117"
+      ]
+    },
+    {
+      "entity": "the Social Conference",
+      "label": "ORG",
+      "count": 50,
+      "pages": [
+        35,
+        36,
+        37
+      ],
+      "chunks": [
+        "chunk_116",
+        "chunk_117",
+        "chunk_118",
+        "chunk_119"
+      ]
+    },
+    {
+      "entity": "Congress",
+      "label": "ORG",
+      "count": 35,
+      "pages": [
+        35,
+        36,
+        37
+      ],
+      "chunks": [
+        "chunk_116",
+        "chunk_117",
+        "chunk_118",
+        "chunk_119",
+        "chunk_120"
+      ]
+    },
+    {
+      "entity": "a Political Reform Party",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        36
+      ],
+      "chunks": [
+        "chunk_117"
+      ]
+    },
+    {
+      "entity": "a Social Reform Party",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        36
+      ],
+      "chunks": [
+        "chunk_117"
+      ]
+    },
+    {
+      "entity": "The Political Reform Party",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        36
+      ],
+      "chunks": [
+        "chunk_117"
+      ]
+    },
+    {
+      "entity": "the National Congress and Social Reform Party",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        36
+      ],
+      "chunks": [
+        "chunk_117"
+      ]
+    },
+    {
+      "entity": "Tilak",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        36,
+        37,
+        84,
+        85
+      ],
+      "chunks": [
+        "chunk_118",
+        "chunk_119",
+        "chunk_322",
+        "chunk_323"
+      ]
+    },
+    {
+      "entity": "W.C. Bonnerji",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        36,
+        37
+      ],
+      "chunks": [
+        "chunk_118",
+        "chunk_119"
+      ]
+    },
+    {
+      "entity": "Allahabad",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        36,
+        37
+      ],
+      "chunks": [
+        "chunk_118",
+        "chunk_119"
+      ]
+    },
+    {
+      "entity": "Oxford",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        37
+      ],
+      "chunks": [
+        "chunk_120"
+      ]
+    },
+    {
+      "entity": "Cambridge",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        37
+      ],
+      "chunks": [
+        "chunk_120"
+      ]
+    },
+    {
+      "entity": "Kalotas",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_123"
+      ]
+    },
+    {
+      "entity": "Brahmins",
+      "label": "PERSON",
+      "count": 242,
+      "pages": [
+        13,
+        14,
+        16,
+        17,
+        18,
+        19,
+        37,
+        38,
+        46,
+        47,
+        50,
+        51,
+        52,
+        59,
+        60,
+        61,
+        62,
+        67,
+        68,
+        69,
+        70,
+        72,
+        73,
+        81,
+        87,
+        88,
+        89,
+        93
+      ],
+      "chunks": [
+        "chunk_123",
+        "chunk_158",
+        "chunk_159",
+        "chunk_173",
+        "chunk_179",
+        "chunk_180",
+        "chunk_209",
+        "chunk_212",
+        "chunk_213",
+        "chunk_214",
+        "chunk_219",
+        "chunk_220",
+        "chunk_221",
+        "chunk_247",
+        "chunk_248",
+        "chunk_249",
+        "chunk_252",
+        "chunk_254",
+        "chunk_255",
+        "chunk_256",
+        "chunk_257",
+        "chunk_258",
+        "chunk_267",
+        "chunk_268",
+        "chunk_310",
+        "chunk_311",
+        "chunk_334",
+        "chunk_335",
+        "chunk_336",
+        "chunk_337",
+        "chunk_355",
+        "chunk_356",
+        "chunk_357",
+        "chunk_38",
+        "chunk_39",
+        "chunk_42",
+        "chunk_43",
+        "chunk_52",
+        "chunk_60",
+        "chunk_61",
+        "chunk_63"
+      ]
+    },
+    {
+      "entity": "Patwaris",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_123"
+      ]
+    },
+    {
+      "entity": "Kanaria",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_123"
+      ]
+    },
+    {
+      "entity": "Bicholi",
+      "label": "GPE",
+      "count": 10,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_123"
+      ]
+    },
+    {
+      "entity": "Mardana",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_123"
+      ]
+    },
+    {
+      "entity": "the Indore State",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_123"
+      ]
+    },
+    {
+      "entity": "Darbar",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_124",
+        "chunk_125"
+      ]
+    },
+    {
+      "entity": "States",
+      "label": "GPE",
+      "count": 10,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_124",
+        "chunk_125"
+      ]
+    },
+    {
+      "entity": "Dhar",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        38
+      ],
+      "chunks": [
+        "chunk_125"
+      ]
+    },
+    {
+      "entity": "Dewas",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        38
+      ],
+      "chunks": [
+        "chunk_125"
+      ]
+    },
+    {
+      "entity": "Bagli",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        38
+      ],
+      "chunks": [
+        "chunk_125"
+      ]
+    },
+    {
+      "entity": "Bhopal",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        38
+      ],
+      "chunks": [
+        "chunk_125"
+      ]
+    },
+    {
+      "entity": "Kavitha",
+      "label": "GPE",
+      "count": 15,
+      "pages": [
+        38,
+        39
+      ],
+      "chunks": [
+        "chunk_125",
+        "chunk_126"
+      ]
+    },
+    {
+      "entity": "Gujarat",
+      "label": "GPE",
+      "count": 10,
+      "pages": [
+        38,
+        39
+      ],
+      "chunks": [
+        "chunk_125",
+        "chunk_126"
+      ]
+    },
+    {
+      "entity": "Zanu",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        38,
+        39
+      ],
+      "chunks": [
+        "chunk_125",
+        "chunk_126"
+      ]
+    },
+    {
+      "entity": "Ahmedabad",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        38,
+        39
+      ],
+      "chunks": [
+        "chunk_125",
+        "chunk_126"
+      ]
+    },
+    {
+      "entity": "Chakwara",
+      "label": "GPE",
+      "count": 15,
+      "pages": [
+        38,
+        39
+      ],
+      "chunks": [
+        "chunk_126",
+        "chunk_127",
+        "chunk_128"
+      ]
+    },
+    {
+      "entity": "Jaipur State",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        38,
+        39
+      ],
+      "chunks": [
+        "chunk_126"
+      ]
+    },
+    {
+      "entity": "The Social Conference",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        39,
+        40
+      ],
+      "chunks": [
+        "chunk_132",
+        "chunk_133"
+      ]
+    },
+    {
+      "entity": "Hindu Family",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        39,
+        40
+      ],
+      "chunks": [
+        "chunk_132",
+        "chunk_133"
+      ]
+    },
+    {
+      "entity": "the Political Reform Party",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        39,
+        40
+      ],
+      "chunks": [
+        "chunk_133",
+        "chunk_134"
+      ]
+    },
+    {
+      "entity": "the Social Reform Party",
+      "label": "ORG",
+      "count": 20,
+      "pages": [
+        39,
+        40,
+        41
+      ],
+      "chunks": [
+        "chunk_132",
+        "chunk_133",
+        "chunk_134",
+        "chunk_135",
+        "chunk_136"
+      ]
+    },
+    {
+      "entity": "Ferdinand Lassalle",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        40
+      ],
+      "chunks": [
+        "chunk_134",
+        "chunk_135"
+      ]
+    },
+    {
+      "entity": "Karl Marx",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        40,
+        70
+      ],
+      "chunks": [
+        "chunk_134",
+        "chunk_135",
+        "chunk_258"
+      ]
+    },
+    {
+      "entity": "Ulster",
+      "label": "PERSON",
+      "count": 30,
+      "pages": [
+        40,
+        41
+      ],
+      "chunks": [
+        "chunk_136",
+        "chunk_137"
+      ]
+    },
+    {
+      "entity": "Southern Ireland",
+      "label": "GPE",
+      "count": 10,
+      "pages": [
+        40,
+        41
+      ],
+      "chunks": [
+        "chunk_136",
+        "chunk_137"
+      ]
+    },
+    {
+      "entity": "Redmond",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        40,
+        41
+      ],
+      "chunks": [
+        "chunk_136",
+        "chunk_137"
+      ]
+    },
+    {
+      "entity": "Ireland",
+      "label": "GPE",
+      "count": 20,
+      "pages": [
+        40,
+        41
+      ],
+      "chunks": [
+        "chunk_136",
+        "chunk_137",
+        "chunk_138"
+      ]
+    },
+    {
+      "entity": "the Communal Award",
+      "label": "ORG",
+      "count": 25,
+      "pages": [
+        40,
+        41
+      ],
+      "chunks": [
+        "chunk_135",
+        "chunk_136",
+        "chunk_139",
+        "chunk_140"
+      ]
+    },
+    {
+      "entity": "Ulstermen",
+      "label": "GPE",
+      "count": 10,
+      "pages": [
+        40,
+        41
+      ],
+      "chunks": [
+        "chunk_136",
+        "chunk_137",
+        "chunk_138"
+      ]
+    },
+    {
+      "entity": "Rome",
+      "label": "GPE",
+      "count": 20,
+      "pages": [
+        41,
+        42,
+        43
+      ],
+      "chunks": [
+        "chunk_138",
+        "chunk_139",
+        "chunk_144",
+        "chunk_145"
+      ]
+    },
+    {
+      "entity": "Kingly",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        41
+      ],
+      "chunks": [
+        "chunk_139"
+      ]
+    },
+    {
+      "entity": "Imperium",
+      "label": "WORK_OF_ART",
+      "count": 5,
+      "pages": [
+        41
+      ],
+      "chunks": [
+        "chunk_139"
+      ]
+    },
+    {
+      "entity": "Reformation",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        41,
+        42
+      ],
+      "chunks": [
+        "chunk_141"
+      ]
+    },
+    {
+      "entity": "Luther",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        41,
+        42
+      ],
+      "chunks": [
+        "chunk_141"
+      ]
+    },
+    {
+      "entity": "Chandragupta",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        42
+      ],
+      "chunks": [
+        "chunk_142"
+      ]
+    },
+    {
+      "entity": "Buddha",
+      "label": "PERSON",
+      "count": 20,
+      "pages": [
+        42,
+        66,
+        67,
+        88,
+        89
+      ],
+      "chunks": [
+        "chunk_142",
+        "chunk_241",
+        "chunk_242",
+        "chunk_337",
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "Sadhus",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        42
+      ],
+      "chunks": [
+        "chunk_144"
+      ]
+    },
+    {
+      "entity": "Fakirs",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        42
+      ],
+      "chunks": [
+        "chunk_144"
+      ]
+    },
+    {
+      "entity": "Mecca",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        42
+      ],
+      "chunks": [
+        "chunk_144"
+      ]
+    },
+    {
+      "entity": "Delphi",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        43
+      ],
+      "chunks": [
+        "chunk_146"
+      ]
+    },
+    {
+      "entity": "Goddess",
+      "label": "ORG",
+      "count": 30,
+      "pages": [
+        43,
+        88,
+        89
+      ],
+      "chunks": [
+        "chunk_146",
+        "chunk_147",
+        "chunk_337",
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "Consul",
+      "label": "GPE",
+      "count": 20,
+      "pages": [
+        42,
+        43
+      ],
+      "chunks": [
+        "chunk_145",
+        "chunk_146",
+        "chunk_147"
+      ]
+    },
+    {
+      "entity": "European Society",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        43
+      ],
+      "chunks": [
+        "chunk_147",
+        "chunk_148"
+      ]
+    },
+    {
+      "entity": "Economic Interpretation of History",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        43,
+        44
+      ],
+      "chunks": [
+        "chunk_149"
+      ]
+    },
+    {
+      "entity": "Socialist",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        44
+      ],
+      "chunks": [
+        "chunk_150",
+        "chunk_151"
+      ]
+    },
+    {
+      "entity": "Socialism",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        44
+      ],
+      "chunks": [
+        "chunk_150",
+        "chunk_151"
+      ]
+    },
+    {
+      "entity": "D. R. Bhandarkar",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        46,
+        47
+      ],
+      "chunks": [
+        "chunk_158",
+        "chunk_159"
+      ]
+    },
+    {
+      "entity": "Marathas",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        46,
+        47
+      ],
+      "chunks": [
+        "chunk_158",
+        "chunk_159"
+      ]
+    },
+    {
+      "entity": "the Brahmin of the Punjab",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        46,
+        47
+      ],
+      "chunks": [
+        "chunk_159",
+        "chunk_160"
+      ]
+    },
+    {
+      "entity": "the Chamar of the Punjab",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        46,
+        47
+      ],
+      "chunks": [
+        "chunk_159",
+        "chunk_160"
+      ]
+    },
+    {
+      "entity": "The Brahmin of the",
+      "label": "PERSON",
+      "count": 4,
+      "pages": [
+        46,
+        47
+      ],
+      "chunks": [
+        "chunk_160"
+      ]
+    },
+    {
+      "entity": "Batcson",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        47,
+        48
+      ],
+      "chunks": [
+        "chunk_164"
+      ]
+    },
+    {
+      "entity": "Mendel\u2019s Principles of Heredity",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        47,
+        48
+      ],
+      "chunks": [
+        "chunk_164"
+      ]
+    },
+    {
+      "entity": "Mohammedan",
+      "label": "PERSON",
+      "count": 50,
+      "pages": [
+        48,
+        52,
+        53,
+        54,
+        63,
+        68,
+        69
+      ],
+      "chunks": [
+        "chunk_166",
+        "chunk_181",
+        "chunk_183",
+        "chunk_184",
+        "chunk_185",
+        "chunk_186",
+        "chunk_226",
+        "chunk_227",
+        "chunk_251"
+      ]
+    },
+    {
+      "entity": "Golak Brahmins",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        49,
+        50
+      ],
+      "chunks": [
+        "chunk_172",
+        "chunk_173"
+      ]
+    },
+    {
+      "entity": "Deorukha Brahmins",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        49,
+        50
+      ],
+      "chunks": [
+        "chunk_172",
+        "chunk_173"
+      ]
+    },
+    {
+      "entity": "Karada Brahmins",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        49,
+        50
+      ],
+      "chunks": [
+        "chunk_172",
+        "chunk_173"
+      ]
+    },
+    {
+      "entity": "Palshe Brahmins",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        49,
+        50
+      ],
+      "chunks": [
+        "chunk_172",
+        "chunk_173"
+      ]
+    },
+    {
+      "entity": "Chitpavan Brahmins",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        49,
+        50
+      ],
+      "chunks": [
+        "chunk_172",
+        "chunk_173"
+      ]
+    },
+    {
+      "entity": "non-Brahmins",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        50
+      ],
+      "chunks": [
+        "chunk_174"
+      ]
+    },
+    {
+      "entity": "Caste Consciousness",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        50,
+        51
+      ],
+      "chunks": [
+        "chunk_174",
+        "chunk_175",
+        "chunk_176"
+      ]
+    },
+    {
+      "entity": "Sonars",
+      "label": "ORG",
+      "count": 25,
+      "pages": [
+        51,
+        52
+      ],
+      "chunks": [
+        "chunk_178",
+        "chunk_179",
+        "chunk_180"
+      ]
+    },
+    {
+      "entity": "the Pathare Prabhus",
+      "label": "ORG",
+      "count": 15,
+      "pages": [
+        51,
+        52
+      ],
+      "chunks": [
+        "chunk_178",
+        "chunk_179",
+        "chunk_180",
+        "chunk_181"
+      ]
+    },
+    {
+      "entity": "Daivadnya Brahmins",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        51
+      ],
+      "chunks": [
+        "chunk_179"
+      ]
+    },
+    {
+      "entity": "the Councils of the East India Company\u2019s",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        51,
+        52
+      ],
+      "chunks": [
+        "chunk_179",
+        "chunk_180"
+      ]
+    },
+    {
+      "entity": "Peshwas",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        51,
+        52
+      ],
+      "chunks": [
+        "chunk_180",
+        "chunk_181"
+      ]
+    },
+    {
+      "entity": "Shudhi",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        52,
+        53
+      ],
+      "chunks": [
+        "chunk_183",
+        "chunk_184"
+      ]
+    },
+    {
+      "entity": "Sanghatan",
+      "label": "GPE",
+      "count": 15,
+      "pages": [
+        52,
+        53,
+        54
+      ],
+      "chunks": [
+        "chunk_183",
+        "chunk_184",
+        "chunk_187"
+      ]
+    },
+    {
+      "entity": "Sikh",
+      "label": "PERSON",
+      "count": 65,
+      "pages": [
+        52,
+        53,
+        63,
+        78
+      ],
+      "chunks": [
+        "chunk_183",
+        "chunk_184",
+        "chunk_185",
+        "chunk_226",
+        "chunk_227",
+        "chunk_298"
+      ]
+    },
+    {
+      "entity": "Khalsa",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        53
+      ],
+      "chunks": [
+        "chunk_185"
+      ]
+    },
+    {
+      "entity": "Sava Lakh",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        53
+      ],
+      "chunks": [
+        "chunk_185"
+      ]
+    },
+    {
+      "entity": "Caste System",
+      "label": "PERSON",
+      "count": 35,
+      "pages": [
+        45,
+        47,
+        49,
+        50,
+        51,
+        53,
+        54,
+        89,
+        90
+      ],
+      "chunks": [
+        "chunk_154",
+        "chunk_155",
+        "chunk_162",
+        "chunk_171",
+        "chunk_172",
+        "chunk_178",
+        "chunk_179",
+        "chunk_187",
+        "chunk_340",
+        "chunk_341"
+      ]
+    },
+    {
+      "entity": "Kayastha",
+      "label": "GPE",
+      "count": 10,
+      "pages": [
+        54,
+        55
+      ],
+      "chunks": [
+        "chunk_190",
+        "chunk_191"
+      ]
+    },
+    {
+      "entity": "the Arya Samajists",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        56,
+        57,
+        61,
+        62,
+        75,
+        76
+      ],
+      "chunks": [
+        "chunk_197",
+        "chunk_198",
+        "chunk_218",
+        "chunk_219",
+        "chunk_220",
+        "chunk_281",
+        "chunk_282",
+        "chunk_283"
+      ]
+    },
+    {
+      "entity": "Chaturvarnya",
+      "label": "GPE",
+      "count": 250,
+      "pages": [
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        84,
+        85,
+        87,
+        88
+      ],
+      "chunks": [
+        "chunk_197",
+        "chunk_198",
+        "chunk_199",
+        "chunk_200",
+        "chunk_201",
+        "chunk_202",
+        "chunk_204",
+        "chunk_205",
+        "chunk_206",
+        "chunk_207",
+        "chunk_208",
+        "chunk_209",
+        "chunk_210",
+        "chunk_211",
+        "chunk_212",
+        "chunk_213",
+        "chunk_214",
+        "chunk_215",
+        "chunk_216",
+        "chunk_217",
+        "chunk_218",
+        "chunk_220",
+        "chunk_221",
+        "chunk_320",
+        "chunk_321",
+        "chunk_322",
+        "chunk_333",
+        "chunk_334"
+      ]
+    },
+    {
+      "entity": "Arya Samajists",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        56,
+        57
+      ],
+      "chunks": [
+        "chunk_198",
+        "chunk_199"
+      ]
+    },
+    {
+      "entity": "Hindu Society",
+      "label": "ORG",
+      "count": 35,
+      "pages": [
+        10,
+        11,
+        14,
+        35,
+        36,
+        48,
+        52,
+        53,
+        57,
+        67,
+        68
+      ],
+      "chunks": [
+        "chunk_116",
+        "chunk_117",
+        "chunk_165",
+        "chunk_166",
+        "chunk_183",
+        "chunk_199",
+        "chunk_247",
+        "chunk_248",
+        "chunk_29",
+        "chunk_42"
+      ]
+    },
+    {
+      "entity": "the Brahmin, Kshatriya",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        57
+      ],
+      "chunks": [
+        "chunk_199",
+        "chunk_200"
+      ]
+    },
+    {
+      "entity": "Brahmin, Kshatriya",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        57
+      ],
+      "chunks": [
+        "chunk_200",
+        "chunk_201"
+      ]
+    },
+    {
+      "entity": "Varna",
+      "label": "GPE",
+      "count": 205,
+      "pages": [
+        57,
+        58,
+        71,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        87,
+        88,
+        90,
+        91,
+        92
+      ],
+      "chunks": [
+        "chunk_201",
+        "chunk_202",
+        "chunk_262",
+        "chunk_263",
+        "chunk_309",
+        "chunk_310",
+        "chunk_311",
+        "chunk_315",
+        "chunk_317",
+        "chunk_318",
+        "chunk_321",
+        "chunk_322",
+        "chunk_333",
+        "chunk_342",
+        "chunk_343",
+        "chunk_344",
+        "chunk_345",
+        "chunk_346",
+        "chunk_347",
+        "chunk_349",
+        "chunk_350"
+      ]
+    },
+    {
+      "entity": "Plato\u2019s Republic",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        58
+      ],
+      "chunks": [
+        "chunk_204",
+        "chunk_205"
+      ]
+    },
+    {
+      "entity": "Shambuka",
+      "label": "PERSON",
+      "count": 30,
+      "pages": [
+        58,
+        59
+      ],
+      "chunks": [
+        "chunk_206",
+        "chunk_207"
+      ]
+    },
+    {
+      "entity": "Rama",
+      "label": "ORG",
+      "count": 30,
+      "pages": [
+        58,
+        59,
+        88,
+        89
+      ],
+      "chunks": [
+        "chunk_206",
+        "chunk_207",
+        "chunk_337",
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "Ram Raj",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        58,
+        59
+      ],
+      "chunks": [
+        "chunk_206"
+      ]
+    },
+    {
+      "entity": "Manu-Smriti",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        59
+      ],
+      "chunks": [
+        "chunk_207"
+      ]
+    },
+    {
+      "entity": "Varnas",
+      "label": "ORG",
+      "count": 35,
+      "pages": [
+        35,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        82,
+        83
+      ],
+      "chunks": [
+        "chunk_111",
+        "chunk_202",
+        "chunk_209",
+        "chunk_210",
+        "chunk_213",
+        "chunk_214",
+        "chunk_220",
+        "chunk_221",
+        "chunk_315",
+        "chunk_316"
+      ]
+    },
+    {
+      "entity": "Vaishyas",
+      "label": "ORG",
+      "count": 15,
+      "pages": [
+        59,
+        60,
+        61,
+        64,
+        65
+      ],
+      "chunks": [
+        "chunk_210",
+        "chunk_211",
+        "chunk_212",
+        "chunk_213",
+        "chunk_214",
+        "chunk_233",
+        "chunk_234"
+      ]
+    },
+    {
+      "entity": "Kshatriyas",
+      "label": "ORG",
+      "count": 20,
+      "pages": [
+        59,
+        60,
+        61,
+        62
+      ],
+      "chunks": [
+        "chunk_210",
+        "chunk_211",
+        "chunk_220",
+        "chunk_221"
+      ]
+    },
+    {
+      "entity": "Mahabharata",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        61,
+        62,
+        80
+      ],
+      "chunks": [
+        "chunk_220",
+        "chunk_305",
+        "chunk_306"
+      ]
+    },
+    {
+      "entity": "Puranas",
+      "label": "PERSON",
+      "count": 20,
+      "pages": [
+        61,
+        62,
+        74,
+        75,
+        80,
+        90
+      ],
+      "chunks": [
+        "chunk_220",
+        "chunk_277",
+        "chunk_278",
+        "chunk_305",
+        "chunk_306",
+        "chunk_342",
+        "chunk_343"
+      ]
+    },
+    {
+      "entity": "Bhagwat",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        61,
+        62
+      ],
+      "chunks": [
+        "chunk_220",
+        "chunk_221"
+      ]
+    },
+    {
+      "entity": "Krishna",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        61,
+        62
+      ],
+      "chunks": [
+        "chunk_220",
+        "chunk_221"
+      ]
+    },
+    {
+      "entity": "Avtar",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        61,
+        62
+      ],
+      "chunks": [
+        "chunk_220",
+        "chunk_221"
+      ]
+    },
+    {
+      "entity": "Carlyle",
+      "label": "PERSON",
+      "count": 9,
+      "pages": [
+        62,
+        63,
+        88
+      ],
+      "chunks": [
+        "chunk_225",
+        "chunk_226",
+        "chunk_335"
+      ]
+    },
+    {
+      "entity": "Non-Hindus",
+      "label": "ORG",
+      "count": 55,
+      "pages": [
+        62,
+        63,
+        64
+      ],
+      "chunks": [
+        "chunk_225",
+        "chunk_226",
+        "chunk_227",
+        "chunk_228",
+        "chunk_229"
+      ]
+    },
+    {
+      "entity": "Shiya",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        63
+      ],
+      "chunks": [
+        "chunk_226",
+        "chunk_227"
+      ]
+    },
+    {
+      "entity": "Sheikh",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        63
+      ],
+      "chunks": [
+        "chunk_226",
+        "chunk_227"
+      ]
+    },
+    {
+      "entity": "Saiyad",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        63
+      ],
+      "chunks": [
+        "chunk_226",
+        "chunk_227"
+      ]
+    },
+    {
+      "entity": "Khatik",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        63
+      ],
+      "chunks": [
+        "chunk_226",
+        "chunk_227"
+      ]
+    },
+    {
+      "entity": "Pinjari",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        63
+      ],
+      "chunks": [
+        "chunk_226",
+        "chunk_227"
+      ]
+    },
+    {
+      "entity": "Ramdasi",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        63
+      ],
+      "chunks": [
+        "chunk_226",
+        "chunk_227"
+      ]
+    },
+    {
+      "entity": "Religion",
+      "label": "ORG",
+      "count": 66,
+      "pages": [
+        63,
+        64,
+        72,
+        73,
+        74,
+        75,
+        76,
+        91,
+        92
+      ],
+      "chunks": [
+        "chunk_228",
+        "chunk_269",
+        "chunk_270",
+        "chunk_272",
+        "chunk_273",
+        "chunk_274",
+        "chunk_275",
+        "chunk_276",
+        "chunk_277",
+        "chunk_278",
+        "chunk_281",
+        "chunk_282",
+        "chunk_283",
+        "chunk_350",
+        "chunk_351"
+      ]
+    },
+    {
+      "entity": "History",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        63,
+        64
+      ],
+      "chunks": [
+        "chunk_229",
+        "chunk_230"
+      ]
+    },
+    {
+      "entity": "Hinduism",
+      "label": "PERSON",
+      "count": 21,
+      "pages": [
+        63,
+        64,
+        75,
+        86,
+        87,
+        91,
+        92
+      ],
+      "chunks": [
+        "chunk_229",
+        "chunk_230",
+        "chunk_281",
+        "chunk_282",
+        "chunk_329",
+        "chunk_330",
+        "chunk_346",
+        "chunk_352"
+      ]
+    },
+    {
+      "entity": "Kayasthas",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        64,
+        65
+      ],
+      "chunks": [
+        "chunk_233",
+        "chunk_234"
+      ]
+    },
+    {
+      "entity": "Gujaratis",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        65
+      ],
+      "chunks": [
+        "chunk_234",
+        "chunk_235"
+      ]
+    },
+    {
+      "entity": "Banias",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        65
+      ],
+      "chunks": [
+        "chunk_234",
+        "chunk_235"
+      ]
+    },
+    {
+      "entity": "Jains",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        65
+      ],
+      "chunks": [
+        "chunk_234",
+        "chunk_235"
+      ]
+    },
+    {
+      "entity": "the Kayasthas of Northern India",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        65
+      ],
+      "chunks": [
+        "chunk_234",
+        "chunk_235"
+      ]
+    },
+    {
+      "entity": "Non-Brahmins of Southern India",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        65
+      ],
+      "chunks": [
+        "chunk_234",
+        "chunk_235"
+      ]
+    },
+    {
+      "entity": "the Non-Brahmins",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        65
+      ],
+      "chunks": [
+        "chunk_234",
+        "chunk_235"
+      ]
+    },
+    {
+      "entity": "kin",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        29,
+        30,
+        65,
+        66
+      ],
+      "chunks": [
+        "chunk_235",
+        "chunk_236",
+        "chunk_90",
+        "chunk_91",
+        "chunk_92"
+      ]
+    },
+    {
+      "entity": "Nanak",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        67
+      ],
+      "chunks": [
+        "chunk_242"
+      ]
+    },
+    {
+      "entity": "Dicey",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        68
+      ],
+      "chunks": [
+        "chunk_249",
+        "chunk_250"
+      ]
+    },
+    {
+      "entity": "English Constitution",
+      "label": "EVENT",
+      "count": 5,
+      "pages": [
+        68
+      ],
+      "chunks": [
+        "chunk_249",
+        "chunk_250"
+      ]
+    },
+    {
+      "entity": "Parliament",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        68
+      ],
+      "chunks": [
+        "chunk_250"
+      ]
+    },
+    {
+      "entity": "Mohammed",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        68,
+        69
+      ],
+      "chunks": [
+        "chunk_251"
+      ]
+    },
+    {
+      "entity": "the British Parliament",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        68,
+        69
+      ],
+      "chunks": [
+        "chunk_251",
+        "chunk_252"
+      ]
+    },
+    {
+      "entity": "Leslie Stephen",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        68,
+        69
+      ],
+      "chunks": [
+        "chunk_251",
+        "chunk_252"
+      ]
+    },
+    {
+      "entity": "Dharma",
+      "label": "PERSON",
+      "count": 25,
+      "pages": [
+        69,
+        70,
+        73,
+        74
+      ],
+      "chunks": [
+        "chunk_255",
+        "chunk_256",
+        "chunk_273",
+        "chunk_274"
+      ]
+    },
+    {
+      "entity": "Ashta",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        70
+      ],
+      "chunks": [
+        "chunk_257"
+      ]
+    },
+    {
+      "entity": "Sanskaras",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        70
+      ],
+      "chunks": [
+        "chunk_257"
+      ]
+    },
+    {
+      "entity": "XXII",
+      "label": "ORG",
+      "count": 4,
+      "pages": [
+        70
+      ],
+      "chunks": [
+        "chunk_258",
+        "chunk_259"
+      ]
+    },
+    {
+      "entity": "LoL",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        70
+      ],
+      "chunks": [
+        "chunk_259"
+      ]
+    },
+    {
+      "entity": "Smriti",
+      "label": "PERSON",
+      "count": 25,
+      "pages": [
+        70,
+        71,
+        72
+      ],
+      "chunks": [
+        "chunk_259",
+        "chunk_260",
+        "chunk_261",
+        "chunk_262",
+        "chunk_265",
+        "chunk_266",
+        "chunk_267"
+      ]
+    },
+    {
+      "entity": "Sadachar",
+      "label": "GPE",
+      "count": 45,
+      "pages": [
+        70,
+        71,
+        72
+      ],
+      "chunks": [
+        "chunk_259",
+        "chunk_265",
+        "chunk_266",
+        "chunk_267"
+      ]
+    },
+    {
+      "entity": "Vedas",
+      "label": "PERSON",
+      "count": 59,
+      "pages": [
+        15,
+        29,
+        67,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75
+      ],
+      "chunks": [
+        "chunk_244",
+        "chunk_259",
+        "chunk_260",
+        "chunk_262",
+        "chunk_263",
+        "chunk_268",
+        "chunk_269",
+        "chunk_273",
+        "chunk_274",
+        "chunk_277",
+        "chunk_278",
+        "chunk_46",
+        "chunk_47",
+        "chunk_48",
+        "chunk_89",
+        "chunk_90"
+      ]
+    },
+    {
+      "entity": "Smritis",
+      "label": "GPE",
+      "count": 35,
+      "pages": [
+        70,
+        71,
+        72,
+        73,
+        74,
+        80
+      ],
+      "chunks": [
+        "chunk_259",
+        "chunk_260",
+        "chunk_262",
+        "chunk_263",
+        "chunk_266",
+        "chunk_267",
+        "chunk_273",
+        "chunk_274",
+        "chunk_305",
+        "chunk_306"
+      ]
+    },
+    {
+      "entity": "ks\u00bfoeU;sr",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        70,
+        71
+      ],
+      "chunks": [
+        "chunk_259",
+        "chunk_260"
+      ]
+    },
+    {
+      "entity": "ukfLrdks",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        70,
+        71
+      ],
+      "chunks": [
+        "chunk_259",
+        "chunk_260"
+      ]
+    },
+    {
+      "entity": "Jqfr}S",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        70,
+        71
+      ],
+      "chunks": [
+        "chunk_260",
+        "chunk_261",
+        "chunk_262"
+      ]
+    },
+    {
+      "entity": "Shruti",
+      "label": "GPE",
+      "count": 20,
+      "pages": [
+        70,
+        71,
+        72
+      ],
+      "chunks": [
+        "chunk_260",
+        "chunk_261",
+        "chunk_262",
+        "chunk_265",
+        "chunk_266",
+        "chunk_267"
+      ]
+    },
+    {
+      "entity": "Shloka",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        71
+      ],
+      "chunks": [
+        "chunk_261",
+        "chunk_262"
+      ]
+    },
+    {
+      "entity": "k'p dk'p",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        71
+      ],
+      "chunks": [
+        "chunk_261",
+        "chunk_262"
+      ]
+    },
+    {
+      "entity": "Brihaspati",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        71
+      ],
+      "chunks": [
+        "chunk_261",
+        "chunk_262"
+      ]
+    },
+    {
+      "entity": "osnk;Roksifuca/`Ror~ izek",
+      "label": "ORG",
+      "count": 1,
+      "pages": [
+        71
+      ],
+      "chunks": [
+        "chunk_261"
+      ]
+    },
+    {
+      "entity": "osnk;Roksifuca/`Ror~ izek.",
+      "label": "PERSON",
+      "count": 4,
+      "pages": [
+        71
+      ],
+      "chunks": [
+        "chunk_261",
+        "chunk_262"
+      ]
+    },
+    {
+      "entity": "Railway",
+      "label": "ORG",
+      "count": 1,
+      "pages": [
+        71,
+        72
+      ],
+      "chunks": [
+        "chunk_264"
+      ]
+    },
+    {
+      "entity": "Ramanuja",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        71,
+        72
+      ],
+      "chunks": [
+        "chunk_265"
+      ]
+    },
+    {
+      "entity": "Kabir",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        71,
+        72
+      ],
+      "chunks": [
+        "chunk_265"
+      ]
+    },
+    {
+      "entity": "Shastras",
+      "label": "PERSON",
+      "count": 45,
+      "pages": [
+        71,
+        72,
+        73,
+        74,
+        75,
+        83,
+        84,
+        85,
+        93
+      ],
+      "chunks": [
+        "chunk_265",
+        "chunk_266",
+        "chunk_268",
+        "chunk_269",
+        "chunk_277",
+        "chunk_278",
+        "chunk_318",
+        "chunk_322",
+        "chunk_323",
+        "chunk_356"
+      ]
+    },
+    {
+      "entity": "|\u00edkp;Zrs",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        71,
+        72
+      ],
+      "chunks": [
+        "chunk_265",
+        "chunk_266"
+      ]
+    },
+    {
+      "entity": "su /E;\u00b1",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        71,
+        72
+      ],
+      "chunks": [
+        "chunk_265",
+        "chunk_266"
+      ]
+    },
+    {
+      "entity": "the Hindu Religion",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        73
+      ],
+      "chunks": [
+        "chunk_273"
+      ]
+    },
+    {
+      "entity": "Jaimini",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        73,
+        74
+      ],
+      "chunks": [
+        "chunk_273",
+        "chunk_274"
+      ]
+    },
+    {
+      "entity": "Purva",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        73,
+        74
+      ],
+      "chunks": [
+        "chunk_273",
+        "chunk_274"
+      ]
+    },
+    {
+      "entity": "Law",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        73,
+        74,
+        75
+      ],
+      "chunks": [
+        "chunk_274",
+        "chunk_276",
+        "chunk_277"
+      ]
+    },
+    {
+      "entity": "Burke",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        74,
+        75,
+        77
+      ],
+      "chunks": [
+        "chunk_276",
+        "chunk_277",
+        "chunk_290",
+        "chunk_291"
+      ]
+    },
+    {
+      "entity": "Civil Government",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        74,
+        75
+      ],
+      "chunks": [
+        "chunk_276",
+        "chunk_277"
+      ]
+    },
+    {
+      "entity": "State",
+      "label": "ORG",
+      "count": 40,
+      "pages": [
+        50,
+        51,
+        74,
+        75,
+        77
+      ],
+      "chunks": [
+        "chunk_176",
+        "chunk_278",
+        "chunk_279",
+        "chunk_290",
+        "chunk_291"
+      ]
+    },
+    {
+      "entity": "I.C.S.",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        74,
+        75
+      ],
+      "chunks": [
+        "chunk_278",
+        "chunk_279"
+      ]
+    },
+    {
+      "entity": "Liberty",
+      "label": "ORG",
+      "count": 20,
+      "pages": [
+        55,
+        75,
+        76,
+        84,
+        85
+      ],
+      "chunks": [
+        "chunk_192",
+        "chunk_281",
+        "chunk_282",
+        "chunk_283",
+        "chunk_321",
+        "chunk_322"
+      ]
+    },
+    {
+      "entity": "Upanishads",
+      "label": "ORG",
+      "count": 6,
+      "pages": [
+        75,
+        76,
+        90
+      ],
+      "chunks": [
+        "chunk_283",
+        "chunk_342",
+        "chunk_343"
+      ]
+    },
+    {
+      "entity": "the French Revolution",
+      "label": "EVENT",
+      "count": 5,
+      "pages": [
+        77
+      ],
+      "chunks": [
+        "chunk_290",
+        "chunk_291"
+      ]
+    },
+    {
+      "entity": "MAHATMA GANDHI",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        78,
+        79
+      ],
+      "chunks": [
+        "chunk_299",
+        "chunk_300"
+      ]
+    },
+    {
+      "entity": "Articles",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        78,
+        79
+      ],
+      "chunks": [
+        "chunk_299",
+        "chunk_300"
+      ]
+    },
+    {
+      "entity": "Savarna Hindus",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        79,
+        80
+      ],
+      "chunks": [
+        "chunk_302",
+        "chunk_303"
+      ]
+    },
+    {
+      "entity": "Ramayana",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        80
+      ],
+      "chunks": [
+        "chunk_305",
+        "chunk_306"
+      ]
+    },
+    {
+      "entity": "the Hindu Scriptures",
+      "label": "ORG",
+      "count": 1,
+      "pages": [
+        80
+      ],
+      "chunks": [
+        "chunk_305"
+      ]
+    },
+    {
+      "entity": "Ashrama",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        80,
+        81
+      ],
+      "chunks": [
+        "chunk_309"
+      ]
+    },
+    {
+      "entity": "Segaon",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        81
+      ],
+      "chunks": [
+        "chunk_310"
+      ]
+    },
+    {
+      "entity": "Ahimsa",
+      "label": "GPE",
+      "count": 10,
+      "pages": [
+        81,
+        82,
+        91
+      ],
+      "chunks": [
+        "chunk_311",
+        "chunk_312",
+        "chunk_346"
+      ]
+    },
+    {
+      "entity": "Chaitanya, Jnyandeo, Tukaram, Tiruvalluvar, Ramkrishna Paramahansa",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        81,
+        82,
+        86
+      ],
+      "chunks": [
+        "chunk_312",
+        "chunk_313",
+        "chunk_327",
+        "chunk_328"
+      ]
+    },
+    {
+      "entity": "Mohan Roy",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        81,
+        82
+      ],
+      "chunks": [
+        "chunk_312",
+        "chunk_313"
+      ]
+    },
+    {
+      "entity": "Maharshi Devendranath Tagore",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        81,
+        82
+      ],
+      "chunks": [
+        "chunk_312",
+        "chunk_313"
+      ]
+    },
+    {
+      "entity": "Vivekanand",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        81,
+        82
+      ],
+      "chunks": [
+        "chunk_312",
+        "chunk_313"
+      ]
+    },
+    {
+      "entity": "Shri Sant Ram",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        83,
+        84
+      ],
+      "chunks": [
+        "chunk_317",
+        "chunk_318",
+        "chunk_319"
+      ]
+    },
+    {
+      "entity": "Quran",
+      "label": "GPE",
+      "count": 10,
+      "pages": [
+        83,
+        91
+      ],
+      "chunks": [
+        "chunk_317",
+        "chunk_346",
+        "chunk_347"
+      ]
+    },
+    {
+      "entity": "Bible",
+      "label": "WORK_OF_ART",
+      "count": 10,
+      "pages": [
+        83,
+        91
+      ],
+      "chunks": [
+        "chunk_317",
+        "chunk_346",
+        "chunk_347"
+      ]
+    },
+    {
+      "entity": "MAHATMA",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        83,
+        84
+      ],
+      "chunks": [
+        "chunk_318",
+        "chunk_319"
+      ]
+    },
+    {
+      "entity": "Mahatma",
+      "label": "PERSON",
+      "count": 325,
+      "pages": [
+        33,
+        34,
+        35,
+        54,
+        55,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94
+      ],
+      "chunks": [
+        "chunk_109",
+        "chunk_190",
+        "chunk_191",
+        "chunk_318",
+        "chunk_319",
+        "chunk_320",
+        "chunk_321",
+        "chunk_322",
+        "chunk_323",
+        "chunk_326",
+        "chunk_327",
+        "chunk_328",
+        "chunk_329",
+        "chunk_330",
+        "chunk_333",
+        "chunk_334",
+        "chunk_335",
+        "chunk_336",
+        "chunk_337",
+        "chunk_340",
+        "chunk_341",
+        "chunk_342",
+        "chunk_343",
+        "chunk_344",
+        "chunk_345",
+        "chunk_346",
+        "chunk_347",
+        "chunk_348",
+        "chunk_349",
+        "chunk_350",
+        "chunk_351",
+        "chunk_352",
+        "chunk_353",
+        "chunk_354",
+        "chunk_355",
+        "chunk_358"
+      ]
+    },
+    {
+      "entity": "the Jat Pat Todak Mandal",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        83,
+        84
+      ],
+      "chunks": [
+        "chunk_318",
+        "chunk_319"
+      ]
+    },
+    {
+      "entity": "Varnavyavastha",
+      "label": "GPE",
+      "count": 25,
+      "pages": [
+        82,
+        83,
+        84,
+        85
+      ],
+      "chunks": [
+        "chunk_315",
+        "chunk_316",
+        "chunk_320",
+        "chunk_321",
+        "chunk_322"
+      ]
+    },
+    {
+      "entity": "CASTE Caste",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        84,
+        85
+      ],
+      "chunks": [
+        "chunk_321",
+        "chunk_322"
+      ]
+    },
+    {
+      "entity": "Jnyandeo",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        85
+      ],
+      "chunks": [
+        "chunk_324",
+        "chunk_325"
+      ]
+    },
+    {
+      "entity": "Paithan",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        85
+      ],
+      "chunks": [
+        "chunk_324",
+        "chunk_325"
+      ]
+    },
+    {
+      "entity": "Eknath",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        85
+      ],
+      "chunks": [
+        "chunk_324",
+        "chunk_325"
+      ]
+    },
+    {
+      "entity": "Dharmatma",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        85
+      ],
+      "chunks": [
+        "chunk_324",
+        "chunk_325"
+      ]
+    },
+    {
+      "entity": "vaR;tkpk",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        85,
+        86
+      ],
+      "chunks": [
+        "chunk_325",
+        "chunk_326"
+      ]
+    },
+    {
+      "entity": "foVkG",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        85,
+        86
+      ],
+      "chunks": [
+        "chunk_325",
+        "chunk_326"
+      ]
+    },
+    {
+      "entity": "Hkkxor",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        85,
+        86
+      ],
+      "chunks": [
+        "chunk_325",
+        "chunk_326"
+      ]
+    },
+    {
+      "entity": "Mahatmas",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        42,
+        86
+      ],
+      "chunks": [
+        "chunk_143",
+        "chunk_144",
+        "chunk_327",
+        "chunk_328"
+      ]
+    },
+    {
+      "entity": "Morality",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        87,
+        88
+      ],
+      "chunks": [
+        "chunk_333",
+        "chunk_334"
+      ]
+    },
+    {
+      "entity": "the Social Structure",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        87,
+        88
+      ],
+      "chunks": [
+        "chunk_333",
+        "chunk_334"
+      ]
+    },
+    {
+      "entity": "H. N. Brailsford",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        87,
+        88
+      ],
+      "chunks": [
+        "chunk_333",
+        "chunk_334"
+      ]
+    },
+    {
+      "entity": "Bania",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        87,
+        88
+      ],
+      "chunks": [
+        "chunk_334",
+        "chunk_335"
+      ]
+    },
+    {
+      "entity": "Vishnu",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        88,
+        89
+      ],
+      "chunks": [
+        "chunk_337",
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "Love",
+      "label": "WORK_OF_ART",
+      "count": 9,
+      "pages": [
+        88,
+        89
+      ],
+      "chunks": [
+        "chunk_337",
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "Buddha Gaya",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        88,
+        89
+      ],
+      "chunks": [
+        "chunk_337",
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "Kali",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        88,
+        89
+      ],
+      "chunks": [
+        "chunk_337",
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "the Temple of Parshuram",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        89
+      ],
+      "chunks": [
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "Avatar",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        89
+      ],
+      "chunks": [
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "Caste versus Class",
+      "label": "WORK_OF_ART",
+      "count": 5,
+      "pages": [
+        89,
+        90
+      ],
+      "chunks": [
+        "chunk_340",
+        "chunk_341"
+      ]
+    },
+    {
+      "entity": "Swami Dayanand",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        90,
+        91
+      ],
+      "chunks": [
+        "chunk_344"
+      ]
+    },
+    {
+      "entity": "the Varna System",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        91
+      ],
+      "chunks": [
+        "chunk_345"
+      ]
+    },
+    {
+      "entity": "Politics",
+      "label": "ORG",
+      "count": 1,
+      "pages": [
+        91,
+        92
+      ],
+      "chunks": [
+        "chunk_349"
+      ]
+    },
+    {
+      "entity": "Seminar",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        3
+      ],
+      "chunks": [
+        "chunk_1",
+        "chunk_2"
+      ]
+    },
+    {
+      "entity": "Castes in India : Their",
+      "label": "WORK_OF_ART",
+      "count": 5,
+      "pages": [
+        3,
+        4
+      ],
+      "chunks": [
+        "chunk_2",
+        "chunk_3"
+      ]
+    },
+    {
+      "entity": "Exogamy",
+      "label": "PERSON",
+      "count": 4,
+      "pages": [
+        7
+      ],
+      "chunks": [
+        "chunk_15"
+      ]
+    },
+    {
+      "entity": "Sagotras",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        7
+      ],
+      "chunks": [
+        "chunk_15",
+        "chunk_16"
+      ]
+    },
+    {
+      "entity": "Sannyasa",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        11
+      ],
+      "chunks": [
+        "chunk_30",
+        "chunk_31"
+      ]
+    },
+    {
+      "entity": "Society",
+      "label": "ORG",
+      "count": 20,
+      "pages": [
+        12,
+        13,
+        49,
+        91,
+        92,
+        93
+      ],
+      "chunks": [
+        "chunk_169",
+        "chunk_170",
+        "chunk_171",
+        "chunk_349",
+        "chunk_350",
+        "chunk_353",
+        "chunk_36",
+        "chunk_37"
+      ]
+    },
+    {
+      "entity": "Caste Dharma",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        14
+      ],
+      "chunks": [
+        "chunk_42"
+      ]
+    },
+    {
+      "entity": "Matthew Arnold",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        15
+      ],
+      "chunks": [
+        "chunk_46",
+        "chunk_47",
+        "chunk_48"
+      ]
+    },
+    {
+      "entity": "the Petitio Principii",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        15
+      ],
+      "chunks": [
+        "chunk_48"
+      ]
+    },
+    {
+      "entity": "Herbert Spencer",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        15,
+        16
+      ],
+      "chunks": [
+        "chunk_49",
+        "chunk_50"
+      ]
+    },
+    {
+      "entity": "Walter Bagehot",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        16,
+        17
+      ],
+      "chunks": [
+        "chunk_52",
+        "chunk_53",
+        "chunk_54"
+      ]
+    },
+    {
+      "entity": "Gabriel Tarde",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        16,
+        17
+      ],
+      "chunks": [
+        "chunk_54",
+        "chunk_55"
+      ]
+    },
+    {
+      "entity": "Frail",
+      "label": "GPE",
+      "count": 1,
+      "pages": [
+        17
+      ],
+      "chunks": [
+        "chunk_58"
+      ]
+    },
+    {
+      "entity": "E.C.",
+      "label": "GPE",
+      "count": 1,
+      "pages": [
+        17
+      ],
+      "chunks": [
+        "chunk_58"
+      ]
+    },
+    {
+      "entity": "E.C. Parsons",
+      "label": "ORG",
+      "count": 4,
+      "pages": [
+        17,
+        18
+      ],
+      "chunks": [
+        "chunk_59",
+        "chunk_60"
+      ]
+    },
+    {
+      "entity": "Parsis",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        18,
+        19
+      ],
+      "chunks": [
+        "chunk_63",
+        "chunk_64"
+      ]
+    },
+    {
+      "entity": "Guru (Prophet",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        19
+      ],
+      "chunks": [
+        "chunk_64",
+        "chunk_65"
+      ]
+    },
+    {
+      "entity": "a Supreme Authority",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        20
+      ],
+      "chunks": [
+        "chunk_68",
+        "chunk_69",
+        "chunk_70"
+      ]
+    },
+    {
+      "entity": "B. R. AMBEDKAR PREFACE",
+      "label": "PERSON",
+      "count": 4,
+      "pages": [
+        23,
+        24
+      ],
+      "chunks": [
+        "chunk_74"
+      ]
+    },
+    {
+      "entity": "Essay",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        23,
+        24,
+        25
+      ],
+      "chunks": [
+        "chunk_74",
+        "chunk_75"
+      ]
+    },
+    {
+      "entity": "Saheb",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        24,
+        25
+      ],
+      "chunks": [
+        "chunk_75",
+        "chunk_76"
+      ]
+    },
+    {
+      "entity": "Executive Committee",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        25
+      ],
+      "chunks": [
+        "chunk_77",
+        "chunk_78"
+      ]
+    },
+    {
+      "entity": "Independent Harijans of Punjab",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        25
+      ],
+      "chunks": [
+        "chunk_77",
+        "chunk_78"
+      ]
+    },
+    {
+      "entity": "the Caste Hindus",
+      "label": "WORK_OF_ART",
+      "count": 5,
+      "pages": [
+        25,
+        26
+      ],
+      "chunks": [
+        "chunk_78",
+        "chunk_79"
+      ]
+    },
+    {
+      "entity": "The Reception Committee of the Mandal",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        25,
+        26
+      ],
+      "chunks": [
+        "chunk_79",
+        "chunk_80"
+      ]
+    },
+    {
+      "entity": "CASTE",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        26,
+        27
+      ],
+      "chunks": [
+        "chunk_82"
+      ]
+    },
+    {
+      "entity": "G. C. N",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        27,
+        28
+      ],
+      "chunks": [
+        "chunk_83",
+        "chunk_84"
+      ]
+    },
+    {
+      "entity": "Press",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        28
+      ],
+      "chunks": [
+        "chunk_87"
+      ]
+    },
+    {
+      "entity": "Hindu Religion",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        31,
+        32,
+        74,
+        75
+      ],
+      "chunks": [
+        "chunk_277",
+        "chunk_278",
+        "chunk_97",
+        "chunk_98"
+      ]
+    },
+    {
+      "entity": "Reformer",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        31,
+        32
+      ],
+      "chunks": [
+        "chunk_98",
+        "chunk_99"
+      ]
+    },
+    {
+      "entity": "the Committee",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        32,
+        33
+      ],
+      "chunks": [
+        "chunk_105",
+        "chunk_106",
+        "chunk_107"
+      ]
+    },
+    {
+      "entity": "Shastric",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        35
+      ],
+      "chunks": [
+        "chunk_110",
+        "chunk_111"
+      ]
+    },
+    {
+      "entity": "Bonnerji",
+      "label": "PERSON",
+      "count": 25,
+      "pages": [
+        36,
+        37,
+        39,
+        40
+      ],
+      "chunks": [
+        "chunk_119",
+        "chunk_120",
+        "chunk_128",
+        "chunk_129",
+        "chunk_130",
+        "chunk_131",
+        "chunk_132"
+      ]
+    },
+    {
+      "entity": "Maratha",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        37
+      ],
+      "chunks": [
+        "chunk_121"
+      ]
+    },
+    {
+      "entity": "Poona",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        37
+      ],
+      "chunks": [
+        "chunk_121",
+        "chunk_122"
+      ]
+    },
+    {
+      "entity": "the Times of India",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_122",
+        "chunk_123"
+      ]
+    },
+    {
+      "entity": "Balais",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_123",
+        "chunk_124"
+      ]
+    },
+    {
+      "entity": "Balai",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        37,
+        38
+      ],
+      "chunks": [
+        "chunk_124",
+        "chunk_125"
+      ]
+    },
+    {
+      "entity": "Mill",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        39,
+        40
+      ],
+      "chunks": [
+        "chunk_131",
+        "chunk_132"
+      ]
+    },
+    {
+      "entity": "Lassalle",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        40
+      ],
+      "chunks": [
+        "chunk_134",
+        "chunk_135"
+      ]
+    },
+    {
+      "entity": "Prussia",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        40
+      ],
+      "chunks": [
+        "chunk_134",
+        "chunk_135"
+      ]
+    },
+    {
+      "entity": "The Communal Award",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        40,
+        41
+      ],
+      "chunks": [
+        "chunk_135",
+        "chunk_136"
+      ]
+    },
+    {
+      "entity": "Irish Home Rule",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        40,
+        41
+      ],
+      "chunks": [
+        "chunk_136"
+      ]
+    },
+    {
+      "entity": "Ulster to Irish Home Rule",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        40,
+        41
+      ],
+      "chunks": [
+        "chunk_137"
+      ]
+    },
+    {
+      "entity": "This Republican Constitution",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        41
+      ],
+      "chunks": [
+        "chunk_139",
+        "chunk_140"
+      ]
+    },
+    {
+      "entity": "the Muslim Empire",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        41,
+        42
+      ],
+      "chunks": [
+        "chunk_141",
+        "chunk_142"
+      ]
+    },
+    {
+      "entity": "Prophet Mohammad",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        42
+      ],
+      "chunks": [
+        "chunk_142"
+      ]
+    },
+    {
+      "entity": "Guru Nanak",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        42,
+        67
+      ],
+      "chunks": [
+        "chunk_142",
+        "chunk_242"
+      ]
+    },
+    {
+      "entity": "the Commitia Centuriata",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        42,
+        43
+      ],
+      "chunks": [
+        "chunk_144",
+        "chunk_145"
+      ]
+    },
+    {
+      "entity": "the Patrician Consuls",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        42,
+        43
+      ],
+      "chunks": [
+        "chunk_145"
+      ]
+    },
+    {
+      "entity": "The Caste system",
+      "label": "WORK_OF_ART",
+      "count": 5,
+      "pages": [
+        46,
+        47
+      ],
+      "chunks": [
+        "chunk_158",
+        "chunk_159"
+      ]
+    },
+    {
+      "entity": "Bengal",
+      "label": "GPE",
+      "count": 10,
+      "pages": [
+        46,
+        47,
+        65
+      ],
+      "chunks": [
+        "chunk_159",
+        "chunk_160",
+        "chunk_234"
+      ]
+    },
+    {
+      "entity": "VI Caste",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        48
+      ],
+      "chunks": [
+        "chunk_165"
+      ]
+    },
+    {
+      "entity": "The Caste System",
+      "label": "WORK_OF_ART",
+      "count": 5,
+      "pages": [
+        49,
+        50
+      ],
+      "chunks": [
+        "chunk_171",
+        "chunk_172"
+      ]
+    },
+    {
+      "entity": "Sahyadrikhand",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        49,
+        50
+      ],
+      "chunks": [
+        "chunk_172"
+      ]
+    },
+    {
+      "entity": "the Cromwellian War",
+      "label": "EVENT",
+      "count": 5,
+      "pages": [
+        50
+      ],
+      "chunks": [
+        "chunk_174"
+      ]
+    },
+    {
+      "entity": "Anaryas of the Vedic days",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        50,
+        51
+      ],
+      "chunks": [
+        "chunk_177",
+        "chunk_178"
+      ]
+    },
+    {
+      "entity": "Bhais",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        53
+      ],
+      "chunks": [
+        "chunk_185"
+      ]
+    },
+    {
+      "entity": "Bhai",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        53
+      ],
+      "chunks": [
+        "chunk_185"
+      ]
+    },
+    {
+      "entity": "meek",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        53,
+        54
+      ],
+      "chunks": [
+        "chunk_185",
+        "chunk_186"
+      ]
+    },
+    {
+      "entity": "Morris",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        53,
+        54
+      ],
+      "chunks": [
+        "chunk_186",
+        "chunk_187"
+      ]
+    },
+    {
+      "entity": "XII",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        53,
+        54
+      ],
+      "chunks": [
+        "chunk_187",
+        "chunk_188"
+      ]
+    },
+    {
+      "entity": "Plato",
+      "label": "PERSON",
+      "count": 15,
+      "pages": [
+        57,
+        58
+      ],
+      "chunks": [
+        "chunk_202",
+        "chunk_203",
+        "chunk_204"
+      ]
+    },
+    {
+      "entity": "the Laws of Manu",
+      "label": "WORK_OF_ART",
+      "count": 5,
+      "pages": [
+        60,
+        61
+      ],
+      "chunks": [
+        "chunk_214"
+      ]
+    },
+    {
+      "entity": "XVIII Chaturvarnya",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        61
+      ],
+      "chunks": [
+        "chunk_218",
+        "chunk_219"
+      ]
+    },
+    {
+      "entity": "S. Radhakrishnan",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        63,
+        64
+      ],
+      "chunks": [
+        "chunk_229"
+      ]
+    },
+    {
+      "entity": "Radhakrishnan",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        64
+      ],
+      "chunks": [
+        "chunk_230"
+      ]
+    },
+    {
+      "entity": "The Brahmins of Northern",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        64,
+        65
+      ],
+      "chunks": [
+        "chunk_233",
+        "chunk_234"
+      ]
+    },
+    {
+      "entity": "kith",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        68
+      ],
+      "chunks": [
+        "chunk_248",
+        "chunk_249",
+        "chunk_250"
+      ]
+    },
+    {
+      "entity": "the Brahmins of India",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        68,
+        69
+      ],
+      "chunks": [
+        "chunk_251",
+        "chunk_252"
+      ]
+    },
+    {
+      "entity": "Bhudevas",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        69,
+        70
+      ],
+      "chunks": [
+        "chunk_254",
+        "chunk_255",
+        "chunk_256"
+      ]
+    },
+    {
+      "entity": "czk\u00e3.k A",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        69,
+        70
+      ],
+      "chunks": [
+        "chunk_254",
+        "chunk_255",
+        "chunk_256"
+      ]
+    },
+    {
+      "entity": "vukEukrs\"kq /esZ\"kq dFka L;kfnfr",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        69,
+        70
+      ],
+      "chunks": [
+        "chunk_255",
+        "chunk_256"
+      ]
+    },
+    {
+      "entity": "pRokfj",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        71
+      ],
+      "chunks": [
+        "chunk_262",
+        "chunk_263"
+      ]
+    },
+    {
+      "entity": "Caste and Untouchability",
+      "label": "ORG",
+      "count": 15,
+      "pages": [
+        71,
+        72,
+        85
+      ],
+      "chunks": [
+        "chunk_264",
+        "chunk_265",
+        "chunk_323",
+        "chunk_324",
+        "chunk_325"
+      ]
+    },
+    {
+      "entity": "kQekxr%",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        72
+      ],
+      "chunks": [
+        "chunk_266",
+        "chunk_267"
+      ]
+    },
+    {
+      "entity": "losZ\"kka l",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        72
+      ],
+      "chunks": [
+        "chunk_266",
+        "chunk_267"
+      ]
+    },
+    {
+      "entity": "the Religion of the Shrutis and the Smritis",
+      "label": "WORK_OF_ART",
+      "count": 5,
+      "pages": [
+        72,
+        73
+      ],
+      "chunks": [
+        "chunk_268",
+        "chunk_269"
+      ]
+    },
+    {
+      "entity": "syphilis",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        75
+      ],
+      "chunks": [
+        "chunk_280"
+      ]
+    },
+    {
+      "entity": "Prof. Carver",
+      "label": "ORG",
+      "count": 4,
+      "pages": [
+        76,
+        77
+      ],
+      "chunks": [
+        "chunk_287",
+        "chunk_288"
+      ]
+    },
+    {
+      "entity": "Morality Carver",
+      "label": "ORG",
+      "count": 1,
+      "pages": [
+        76,
+        77
+      ],
+      "chunks": [
+        "chunk_288"
+      ]
+    },
+    {
+      "entity": "John Dewey",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        77
+      ],
+      "chunks": [
+        "chunk_290",
+        "chunk_291"
+      ]
+    },
+    {
+      "entity": "Dewey",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        77
+      ],
+      "chunks": [
+        "chunk_290",
+        "chunk_291"
+      ]
+    },
+    {
+      "entity": "Swaraj",
+      "label": "PERSON",
+      "count": 35,
+      "pages": [
+        78,
+        79
+      ],
+      "chunks": [
+        "chunk_298",
+        "chunk_299"
+      ]
+    },
+    {
+      "entity": "Reception Committee",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        78,
+        79
+      ],
+      "chunks": [
+        "chunk_299",
+        "chunk_300"
+      ]
+    },
+    {
+      "entity": "Rao Bahadur M. C. Rajah",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        80
+      ],
+      "chunks": [
+        "chunk_304"
+      ]
+    },
+    {
+      "entity": "God",
+      "label": "PERSON",
+      "count": 1,
+      "pages": [
+        80
+      ],
+      "chunks": [
+        "chunk_304"
+      ]
+    },
+    {
+      "entity": "Doctorate",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        82
+      ],
+      "chunks": [
+        "chunk_314"
+      ]
+    },
+    {
+      "entity": "Chaitanya",
+      "label": "GPE",
+      "count": 5,
+      "pages": [
+        86,
+        87
+      ],
+      "chunks": [
+        "chunk_329",
+        "chunk_330"
+      ]
+    },
+    {
+      "entity": "Shankar",
+      "label": "ORG",
+      "count": 5,
+      "pages": [
+        88,
+        89
+      ],
+      "chunks": [
+        "chunk_337",
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "Bramha",
+      "label": "ORG",
+      "count": 10,
+      "pages": [
+        89
+      ],
+      "chunks": [
+        "chunk_338"
+      ]
+    },
+    {
+      "entity": "Goddesses",
+      "label": "PERSON",
+      "count": 10,
+      "pages": [
+        89
+      ],
+      "chunks": [
+        "chunk_338",
+        "chunk_339"
+      ]
+    },
+    {
+      "entity": "Stability",
+      "label": "ORG",
+      "count": 1,
+      "pages": [
+        89,
+        90
+      ],
+      "chunks": [
+        "chunk_341"
+      ]
+    },
+    {
+      "entity": "Swami Dayanand Saraswati",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        90
+      ],
+      "chunks": [
+        "chunk_343"
+      ]
+    },
+    {
+      "entity": "Ambedkar\u2019s Indictment",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        91
+      ],
+      "chunks": [
+        "chunk_346"
+      ]
+    },
+    {
+      "entity": "Whom",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        91
+      ],
+      "chunks": [
+        "chunk_347",
+        "chunk_348"
+      ]
+    },
+    {
+      "entity": "XI Hindu",
+      "label": "ORG",
+      "count": 4,
+      "pages": [
+        92
+      ],
+      "chunks": [
+        "chunk_352"
+      ]
+    },
+    {
+      "entity": "Balfour",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        93
+      ],
+      "chunks": [
+        "chunk_355"
+      ]
+    },
+    {
+      "entity": "Mathew Arnold",
+      "label": "PERSON",
+      "count": 5,
+      "pages": [
+        93,
+        94
+      ],
+      "chunks": [
+        "chunk_356",
+        "chunk_357",
+        "chunk_358"
+      ]
+    }
+  ]
+}

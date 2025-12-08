@@ -15,7 +15,7 @@ chunking:
   buffer_size: 2
   max_tokens: 1024
   sub_chunk_tokens: 128
-  overlap_tokens: 128
+  overlap_tokens: 32        # 25% overlap (was 128, causing too many sub-chunks)
 
 graph:
   min_entity_length: 3

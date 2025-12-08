@@ -202,7 +202,10 @@ def split_with_overlap(
 
         if end == len(tokens):
             break
-        start = max(0, end - overlap_tokens)
+        # Ensure we always advance by at least 1 token to avoid infinite loops
+        # when overlap_tokens >= sub_chunk_tokens
+        step = max(1, sub_chunk_tokens - overlap_tokens)
+        start = start + step
 
     return sub_chunks
 
@@ -376,15 +379,23 @@ def run(config: Path = typer.Option(Path("config.yaml"), "--config", "-c")) -> N
 
         # Create all sub-chunks first (text only, not memory intensive)
         sub_chunks: List[Dict[str, Any]] = []
-        for chunk in track(chunks, description="Creating sub-chunks"):
-            sub_chunks.extend(
-                split_with_overlap(
-                    tokenizer=tokenizer,
-                    chunk=chunk,
-                    sub_chunk_tokens=chunk_cfg["sub_chunk_tokens"],
-                    overlap_tokens=chunk_cfg["overlap_tokens"],
+        console.log(f"Processing {len(chunks)} chunks to create sub-chunks...")
+        for idx, chunk in enumerate(track(chunks, description="Creating sub-chunks"), 1):
+            if idx % 10 == 0 or idx == 1:
+                text_len = len(chunk.get("text", ""))
+                console.log(f"Processing chunk {idx}/{len(chunks)} (ID: {chunk.get('id', 'unknown')}, text length: {text_len} chars)")
+            try:
+                sub_chunks.extend(
+                    split_with_overlap(
+                        tokenizer=tokenizer,
+                        chunk=chunk,
+                        sub_chunk_tokens=chunk_cfg["sub_chunk_tokens"],
+                        overlap_tokens=chunk_cfg["overlap_tokens"],
+                    )
                 )
-            )
+            except Exception as e:
+                console.print(f"[yellow]Warning: Error processing chunk {idx} (ID: {chunk.get('id', 'unknown')}): {e}[/yellow]")
+                continue
 
         console.log(f"Sub-chunks generated: {len(sub_chunks)}")
         
