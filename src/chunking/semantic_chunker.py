@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import gc
 import json
 from dataclasses import dataclass
 from pathlib import Path
@@ -213,6 +214,82 @@ def attach_embeddings(
     embeddings = embed_texts(model, texts, batch_size=batch_size)
     for entry, emb in zip(entries, embeddings):
         entry["embedding"] = emb.tolist()
+    # Free memory
+    del embeddings
+    gc.collect()
+
+
+def attach_embeddings_in_batches(
+    model: SentenceTransformer, entries: List[Dict[str, Any]], batch_size: int, embedding_batch_size: int = None
+) -> None:
+    """
+    Attach embeddings to entries in batches to reduce memory usage.
+    Processes entries in smaller batches and frees memory after each batch.
+    """
+    if embedding_batch_size is None:
+        embedding_batch_size = batch_size
+    
+    total = len(entries)
+    for i in range(0, total, embedding_batch_size):
+        batch = entries[i:i + embedding_batch_size]
+        texts = [entry["text"] for entry in batch]
+        embeddings = embed_texts(model, texts, batch_size=batch_size)
+        for entry, emb in zip(batch, embeddings):
+            entry["embedding"] = emb.tolist()
+        # Free memory after each batch
+        del embeddings
+        gc.collect()
+
+
+def compute_distances_in_batches(
+    model: SentenceTransformer,
+    buffered_sentences: List[Dict[str, Any]],
+    batch_size: int,
+    embedding_batch_size: int = None,
+) -> List[float]:
+    """
+    Compute cosine distances between consecutive buffered sentences in batches.
+    This avoids loading all embeddings into memory at once.
+    """
+    if embedding_batch_size is None:
+        embedding_batch_size = min(100, len(buffered_sentences))  # Process 100 at a time
+    
+    distances: List[float] = []
+    total = len(buffered_sentences)
+    
+    # Process in overlapping windows to compute consecutive distances
+    # We need embeddings for pairs (i, i+1), so we process in windows
+    i = 0
+    prev_embedding = None
+    
+    while i < total:
+        # Process a batch
+        end_idx = min(i + embedding_batch_size, total)
+        batch_texts = [b["text"] for b in buffered_sentences[i:end_idx]]
+        batch_embeddings = embed_texts(model, batch_texts, batch_size=batch_size)
+        
+        # Compute distances for this batch
+        if prev_embedding is not None:
+            # Distance between last embedding of previous batch and first of current
+            sim = float(np.dot(prev_embedding, batch_embeddings[0]))
+            distances.append(1.0 - sim)
+        
+        # Compute distances within this batch
+        if len(batch_embeddings) > 1:
+            sims = np.sum(batch_embeddings[:-1] * batch_embeddings[1:], axis=1)
+            batch_dists = (1.0 - sims).tolist()
+            distances.extend(batch_dists)
+        
+        # Store last embedding for next batch
+        prev_embedding = batch_embeddings[-1].copy()
+        
+        # Free memory
+        del batch_embeddings
+        gc.collect()
+        
+        i = end_idx
+    
+    return distances
 
 
 def persist_chunks(
@@ -267,8 +344,14 @@ def run(config: Path = typer.Option(Path("config.yaml"), "--config", "-c")) -> N
         buffered = prepare_buffered_sentences(sentences, chunk_cfg["buffer_size"])
         console.log(f"Buffered sentences count: {len(buffered)}")
 
-        buffered_embeddings = embed_texts(model, [b["text"] for b in buffered], batch_size=emb_cfg.get("batch_size", 16))
-        distances = cosine_distances(buffered_embeddings)
+        # Process buffered embeddings in batches to compute distances
+        # This avoids loading all embeddings into memory at once
+        embedding_batch_size = emb_cfg.get("embedding_batch_size", 100)
+        batch_size = emb_cfg.get("batch_size", 16)
+        console.log(f"Computing distances in batches (batch size: {embedding_batch_size})...")
+        distances = compute_distances_in_batches(
+            model, buffered, batch_size=batch_size, embedding_batch_size=embedding_batch_size
+        )
 
         chunks = split_into_chunks(
             buffered,
@@ -281,8 +364,17 @@ def run(config: Path = typer.Option(Path("config.yaml"), "--config", "-c")) -> N
             raise ValueError("No chunks created. Check PDF content and chunking parameters.")
         console.log(f"Semantic chunks created: {len(chunks)}")
 
-        attach_embeddings(model, chunks, batch_size=emb_cfg.get("batch_size", 16))
+        # Free memory from buffered data and distances
+        del distances
+        gc.collect()
 
+        # Process chunk embeddings in batches
+        console.log("Attaching embeddings to chunks...")
+        attach_embeddings_in_batches(
+            model, chunks, batch_size=batch_size, embedding_batch_size=embedding_batch_size
+        )
+
+        # Create all sub-chunks first (text only, not memory intensive)
         sub_chunks: List[Dict[str, Any]] = []
         for chunk in track(chunks, description="Creating sub-chunks"):
             sub_chunks.extend(
@@ -295,7 +387,12 @@ def run(config: Path = typer.Option(Path("config.yaml"), "--config", "-c")) -> N
             )
 
         console.log(f"Sub-chunks generated: {len(sub_chunks)}")
-        attach_embeddings(model, sub_chunks, batch_size=emb_cfg.get("batch_size", 16))
+        
+        # Process sub-chunk embeddings in batches (CRITICAL: this was the main memory issue)
+        console.log("Attaching embeddings to sub-chunks (this may take a while)...")
+        attach_embeddings_in_batches(
+            model, sub_chunks, batch_size=batch_size, embedding_batch_size=embedding_batch_size
+        )
 
         stats = {
             "sentences": len(sentences),
@@ -307,6 +404,11 @@ def run(config: Path = typer.Option(Path("config.yaml"), "--config", "-c")) -> N
         output_path = Path(paths_cfg["chunks"])
         persist_chunks(output_path, chunks, sub_chunks, stats)
         console.log(f"Chunks persisted to {output_path}")
+        
+        # Final memory cleanup
+        del buffered
+        del sentences
+        gc.collect()
     except (FileNotFoundError, ValueError, RuntimeError) as e:
         console.print(f"[red]Error:[/red] {e}")
         raise
