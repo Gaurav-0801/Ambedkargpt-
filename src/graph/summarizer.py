@@ -9,7 +9,7 @@ import typer
 import yaml
 from rich.console import Console
 
-from llm.llm_client import run_llm
+from src.llm.llm_client import run_llm
 
 console = Console()
 app = typer.Typer(no_args_is_help=True)

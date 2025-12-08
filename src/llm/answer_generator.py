@@ -6,8 +6,8 @@ from typing import Any, Dict, List
 
 import yaml
 
-from llm.llm_client import LLMClient, LLMConfig
-from llm.prompt_templates import ANSWER_SYSTEM_PROMPT, build_answer_prompt
+from src.llm.llm_client import LLMClient, LLMConfig
+from src.llm.prompt_templates import ANSWER_SYSTEM_PROMPT, build_answer_prompt
 
 
 def load_config(path: Path) -> Dict[str, Any]:

@@ -11,19 +11,39 @@ import yaml
 from rich.console import Console
 from sentence_transformers import SentenceTransformer
 
-from graph.entity_extractor import analyze_text
+from src.graph.entity_extractor import analyze_text
 
 console = Console()
 
 
 def load_config(path: Path) -> Dict[str, Any]:
-    with path.open("r", encoding="utf-8") as fh:
-        return yaml.safe_load(fh)
+    if not path.exists():
+        raise FileNotFoundError(f"Config file not found: {path}")
+    try:
+        with path.open("r", encoding="utf-8") as fh:
+            config = yaml.safe_load(fh)
+            if not config:
+                raise ValueError(f"Config file is empty or invalid: {path}")
+            return config
+    except yaml.YAMLError as e:
+        raise ValueError(f"Failed to parse YAML config file {path}: {e}") from e
+    except Exception as e:
+        raise RuntimeError(f"Error loading config from {path}: {e}") from e
 
 
 def load_chunks(path: Path) -> Dict[str, Any]:
-    with path.open("r", encoding="utf-8") as fh:
-        return json.load(fh)
+    if not path.exists():
+        raise FileNotFoundError(f"Chunks file not found: {path}. Run 'python -m src.pipeline.ambedkargpt chunk' first.")
+    try:
+        with path.open("r", encoding="utf-8") as fh:
+            data = json.load(fh)
+            if "chunks" not in data:
+                raise ValueError(f"Invalid chunks file format: missing 'chunks' key in {path}")
+            return data
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Failed to parse JSON chunks file {path}: {e}") from e
+    except Exception as e:
+        raise RuntimeError(f"Error loading chunks from {path}: {e}") from e
 
 
 def normalize_entity(text: str) -> str:
@@ -126,9 +146,14 @@ def attach_entity_embeddings(
 
 
 def persist_graph(graph: nx.Graph, path: Path) -> None:
-    path.parent.mkdir(parents=True, exist_ok=True)
-    with path.open("wb") as fh:
-        pickle.dump(graph, fh)
+    try:
+        path.parent.mkdir(parents=True, exist_ok=True)
+        with path.open("wb") as fh:
+            pickle.dump(graph, fh)
+    except PermissionError as e:
+        raise PermissionError(f"Permission denied writing to {path}: {e}") from e
+    except Exception as e:
+        raise RuntimeError(f"Error persisting graph to {path}: {e}") from e
 
 
 def write_node_index(graph: nx.Graph, path: Path) -> None:
@@ -149,29 +174,44 @@ def write_node_index(graph: nx.Graph, path: Path) -> None:
 
 
 def main(config_path: Path = Path("config.yaml")) -> None:
-    cfg = load_config(config_path)
-    graph_cfg = cfg["graph"]
-    paths_cfg = cfg["paths"]
-    emb_cfg = cfg.get("embeddings", {})
+    try:
+        cfg = load_config(config_path)
+        if "graph" not in cfg:
+            raise ValueError("Config missing 'graph' section")
+        if "paths" not in cfg:
+            raise ValueError("Config missing 'paths' section")
+        graph_cfg = cfg["graph"]
+        paths_cfg = cfg["paths"]
+        emb_cfg = cfg.get("embeddings", {})
 
-    console.rule("[bold]Knowledge Graph Builder[/bold]")
-    chunk_data = load_chunks(Path(paths_cfg["chunks"]))
-    chunks = chunk_data["chunks"]
-    console.log(f"Loaded {len(chunks)} chunks from {paths_cfg['chunks']}")
+        console.rule("[bold]Knowledge Graph Builder[/bold]")
+        chunk_data = load_chunks(Path(paths_cfg["chunks"]))
+        chunks = chunk_data["chunks"]
+        if not chunks:
+            raise ValueError(f"No chunks found in {paths_cfg['chunks']}. Ensure chunking step completed successfully.")
+        console.log(f"Loaded {len(chunks)} chunks from {paths_cfg['chunks']}")
 
-    graph = build_knowledge_graph(chunks, graph_cfg)
-    console.log(f"Graph nodes: {graph.number_of_nodes()} edges: {graph.number_of_edges()}")
+        graph = build_knowledge_graph(chunks, graph_cfg)
+        if graph.number_of_nodes() == 0:
+            console.print("[yellow]Warning:[/yellow] No entities extracted from chunks. Graph is empty.")
+        console.log(f"Graph nodes: {graph.number_of_nodes()} edges: {graph.number_of_edges()}")
 
-    model = SentenceTransformer(cfg["embeddings"]["sentence_model"])
-    attach_entity_embeddings(graph, model, batch_size=emb_cfg.get("batch_size", 16))
+        model = SentenceTransformer(cfg["embeddings"]["sentence_model"])
+        attach_entity_embeddings(graph, model, batch_size=emb_cfg.get("batch_size", 16))
 
-    graph_path = Path(paths_cfg["graph"])
-    persist_graph(graph, graph_path)
-    console.log(f"Graph persisted to {graph_path}")
+        graph_path = Path(paths_cfg["graph"])
+        persist_graph(graph, graph_path)
+        console.log(f"Graph persisted to {graph_path}")
 
-    node_index_path = Path(paths_cfg["node_index"])
-    write_node_index(graph, node_index_path)
-    console.log(f"Node index written to {node_index_path}")
+        node_index_path = Path(paths_cfg["node_index"])
+        write_node_index(graph, node_index_path)
+        console.log(f"Node index written to {node_index_path}")
+    except (FileNotFoundError, ValueError, RuntimeError) as e:
+        console.print(f"[red]Error:[/red] {e}")
+        raise
+    except Exception as e:
+        console.print(f"[red]Unexpected error:[/red] {e}")
+        raise
 
 
 if __name__ == "__main__":

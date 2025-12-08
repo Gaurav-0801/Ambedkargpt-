@@ -31,8 +31,18 @@ class SentenceRecord:
 
 
 def load_config(path: Path) -> Dict[str, Any]:
-    with path.open("r", encoding="utf-8") as fh:
-        return yaml.safe_load(fh)
+    if not path.exists():
+        raise FileNotFoundError(f"Config file not found: {path}")
+    try:
+        with path.open("r", encoding="utf-8") as fh:
+            config = yaml.safe_load(fh)
+            if not config:
+                raise ValueError(f"Config file is empty or invalid: {path}")
+            return config
+    except yaml.YAMLError as e:
+        raise ValueError(f"Failed to parse YAML config file {path}: {e}") from e
+    except Exception as e:
+        raise RuntimeError(f"Error loading config from {path}: {e}") from e
 
 
 def ensure_processed_dir(output_path: Path) -> None:
@@ -40,18 +50,29 @@ def ensure_processed_dir(output_path: Path) -> None:
 
 
 def load_pdf_sentences(pdf_path: Path) -> List[SentenceRecord]:
-    reader = PdfReader(str(pdf_path))
-    sentences: List[SentenceRecord] = []
+    if not pdf_path.exists():
+        raise FileNotFoundError(f"PDF file not found: {pdf_path}")
+    try:
+        reader = PdfReader(str(pdf_path))
+        if len(reader.pages) == 0:
+            raise ValueError(f"PDF file is empty: {pdf_path}")
+        sentences: List[SentenceRecord] = []
 
-    for page_idx, page in enumerate(reader.pages, start=1):
-        text = page.extract_text() or ""
-        for sent in nltk.sent_tokenize(text):
-            cleaned = " ".join(sent.split())
-            if not cleaned:
-                continue
-            sentences.append(SentenceRecord(index=len(sentences), text=cleaned, page=page_idx))
+        for page_idx, page in enumerate(reader.pages, start=1):
+            text = page.extract_text() or ""
+            for sent in nltk.sent_tokenize(text):
+                cleaned = " ".join(sent.split())
+                if not cleaned:
+                    continue
+                sentences.append(SentenceRecord(index=len(sentences), text=cleaned, page=page_idx))
 
-    return sentences
+        if not sentences:
+            raise ValueError(f"No sentences extracted from PDF: {pdf_path}")
+        return sentences
+    except Exception as e:
+        if isinstance(e, (FileNotFoundError, ValueError)):
+            raise
+        raise RuntimeError(f"Error loading PDF from {pdf_path}: {e}") from e
 
 
 def prepare_buffered_sentences(sentences: List[SentenceRecord], buffer_size: int) -> List[Dict[str, Any]]:
@@ -212,60 +233,86 @@ def persist_chunks(
 
 @app.command()
 def run(config: Path = typer.Option(Path("config.yaml"), "--config", "-c")) -> None:
-    cfg = load_config(config)
-    paths_cfg = cfg["paths"]
-    chunk_cfg = cfg["chunking"]
-    emb_cfg = cfg.get("embeddings", {})
+    """
+    Implements Algorithm 1 (Semantic Chunking) from SEMRAG paper.
+    
+    Steps:
+    1. Extract sentences from PDF
+    2. Apply buffer merging to preserve context
+    3. Generate embeddings for buffered sentences
+    4. Compute cosine distances between consecutive embeddings
+    5. Create chunk boundaries when distance exceeds threshold
+    6. Split chunks into sub-chunks with overlap for fine-grained retrieval
+    """
+    try:
+        cfg = load_config(config)
+        if "paths" not in cfg:
+            raise ValueError("Config missing 'paths' section")
+        if "chunking" not in cfg:
+            raise ValueError("Config missing 'chunking' section")
+        if "embeddings" not in cfg:
+            raise ValueError("Config missing 'embeddings' section")
+        paths_cfg = cfg["paths"]
+        chunk_cfg = cfg["chunking"]
+        emb_cfg = cfg.get("embeddings", {})
 
-    tokenizer = tiktoken.get_encoding("cl100k_base")
-    model = SentenceTransformer(cfg["embeddings"]["sentence_model"])
+        tokenizer = tiktoken.get_encoding("cl100k_base")
+        model = SentenceTransformer(cfg["embeddings"]["sentence_model"])
 
-    console.rule("[bold]Semantic Chunking[/bold]")
-    pdf_path = Path(paths_cfg["pdf"])
-    sentences = load_pdf_sentences(pdf_path)
-    console.log(f"Loaded {len(sentences)} sentences from {pdf_path}")
+        console.rule("[bold]Semantic Chunking[/bold]")
+        pdf_path = Path(paths_cfg["pdf"])
+        sentences = load_pdf_sentences(pdf_path)
+        console.log(f"Loaded {len(sentences)} sentences from {pdf_path}")
 
-    buffered = prepare_buffered_sentences(sentences, chunk_cfg["buffer_size"])
-    console.log(f"Buffered sentences count: {len(buffered)}")
+        buffered = prepare_buffered_sentences(sentences, chunk_cfg["buffer_size"])
+        console.log(f"Buffered sentences count: {len(buffered)}")
 
-    buffered_embeddings = embed_texts(model, [b["text"] for b in buffered], batch_size=emb_cfg.get("batch_size", 16))
-    distances = cosine_distances(buffered_embeddings)
+        buffered_embeddings = embed_texts(model, [b["text"] for b in buffered], batch_size=emb_cfg.get("batch_size", 16))
+        distances = cosine_distances(buffered_embeddings)
 
-    chunks = split_into_chunks(
-        buffered,
-        distances,
-        tokenizer=tokenizer,
-        threshold=chunk_cfg["threshold"],
-        max_tokens=chunk_cfg["max_tokens"],
-    )
-    console.log(f"Semantic chunks created: {len(chunks)}")
-
-    attach_embeddings(model, chunks, batch_size=emb_cfg.get("batch_size", 16))
-
-    sub_chunks: List[Dict[str, Any]] = []
-    for chunk in track(chunks, description="Creating sub-chunks"):
-        sub_chunks.extend(
-            split_with_overlap(
-                tokenizer=tokenizer,
-                chunk=chunk,
-                sub_chunk_tokens=chunk_cfg["sub_chunk_tokens"],
-                overlap_tokens=chunk_cfg["overlap_tokens"],
-            )
+        chunks = split_into_chunks(
+            buffered,
+            distances,
+            tokenizer=tokenizer,
+            threshold=chunk_cfg["threshold"],
+            max_tokens=chunk_cfg["max_tokens"],
         )
+        if not chunks:
+            raise ValueError("No chunks created. Check PDF content and chunking parameters.")
+        console.log(f"Semantic chunks created: {len(chunks)}")
 
-    console.log(f"Sub-chunks generated: {len(sub_chunks)}")
-    attach_embeddings(model, sub_chunks, batch_size=emb_cfg.get("batch_size", 16))
+        attach_embeddings(model, chunks, batch_size=emb_cfg.get("batch_size", 16))
 
-    stats = {
-        "sentences": len(sentences),
-        "buffered_sentences": len(buffered),
-        "chunks": len(chunks),
-        "sub_chunks": len(sub_chunks),
-    }
+        sub_chunks: List[Dict[str, Any]] = []
+        for chunk in track(chunks, description="Creating sub-chunks"):
+            sub_chunks.extend(
+                split_with_overlap(
+                    tokenizer=tokenizer,
+                    chunk=chunk,
+                    sub_chunk_tokens=chunk_cfg["sub_chunk_tokens"],
+                    overlap_tokens=chunk_cfg["overlap_tokens"],
+                )
+            )
 
-    output_path = Path(paths_cfg["chunks"])
-    persist_chunks(output_path, chunks, sub_chunks, stats)
-    console.log(f"Chunks persisted to {output_path}")
+        console.log(f"Sub-chunks generated: {len(sub_chunks)}")
+        attach_embeddings(model, sub_chunks, batch_size=emb_cfg.get("batch_size", 16))
+
+        stats = {
+            "sentences": len(sentences),
+            "buffered_sentences": len(buffered),
+            "chunks": len(chunks),
+            "sub_chunks": len(sub_chunks),
+        }
+
+        output_path = Path(paths_cfg["chunks"])
+        persist_chunks(output_path, chunks, sub_chunks, stats)
+        console.log(f"Chunks persisted to {output_path}")
+    except (FileNotFoundError, ValueError, RuntimeError) as e:
+        console.print(f"[red]Error:[/red] {e}")
+        raise
+    except Exception as e:
+        console.print(f"[red]Unexpected error during chunking:[/red] {e}")
+        raise
 
 
 if __name__ == "__main__":

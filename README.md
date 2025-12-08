@@ -22,23 +22,38 @@ ambedkargpt/
 │   ├── Ambedkar_book.pdf
 │   └── processed/
 │       ├── chunks.json
-│       └── knowledge_graph.pkl
+│       ├── knowledge_graph.pkl
+│       ├── community_partition.json
+│       ├── community_reports.json
+│       └── node_index.json
 ├── src/
 │   ├── chunking/
-│   │   └── semantic_chunker.py
+│   │   ├── semantic_chunker.py
+│   │   └── buffer_merger.py
 │   ├── graph/
 │   │   ├── entity_extractor.py
 │   │   ├── graph_builder.py
-│   │   └── community_detector.py
+│   │   ├── community_detector.py
+│   │   └── summarizer.py
 │   ├── retrieval/
 │   │   ├── local_search.py
-│   │   └── global_search.py
+│   │   ├── global_search.py
+│   │   └── ranker.py
 │   ├── llm/
 │   │   ├── llm_client.py
-│   │   └── answer_generator.py
+│   │   ├── answer_generator.py
+│   │   └── prompt_templates.py
 │   └── pipeline/
 │       └── ambedkargpt.py
+├── tests/
+│   ├── test_chunking.py
+│   ├── test_retrieval.py
+│   ├── test_integration.py
+│   └── conftest.py
+├── config.yaml
 ├── requirements.txt
+├── setup.py
+├── demo.py
 ├── .gitignore
 └── README.md
 
@@ -73,8 +88,18 @@ python3 -m venv .venv
 source .venv/bin/activate
 
 2️⃣ Install Dependencies
+
+Option A: Using pip (recommended)
+```bash
 pip install -r requirements.txt
 python -m spacy download en_core_web_sm
+```
+
+Option B: Using setup.py (for development)
+```bash
+pip install -e .
+python -m spacy download en_core_web_sm
+```
 
 3️⃣ Install & Run Ollama (Local LLM)
 
@@ -169,23 +194,73 @@ Offline Execution	✅
 
 ✅ Live demo ready
 
-🧠 How This System Works (Short Explanation)
+🧠 How This System Works (Technical Approach)
 
-PDF is converted into semantically coherent chunks
+### 1. Semantic Chunking (Algorithm 1 from SEMRAG Paper)
 
-Entities & relations are extracted into a knowledge graph
+The system implements semantic chunking using cosine similarity of sentence embeddings:
 
-The graph is grouped into thematic communities
+- **Sentence Extraction**: PDF pages are parsed and split into sentences using NLTK
+- **Buffer Merging**: Neighboring sentences are merged with a configurable buffer window (default: 2) to preserve local context
+- **Embedding Generation**: Each buffered sentence group is embedded using `all-MiniLM-L6-v2` from SentenceTransformers
+- **Semantic Boundary Detection**: Cosine distance between consecutive embeddings is computed. When distance exceeds threshold (default: 0.28), a chunk boundary is created
+- **Token-Aware Splitting**: Chunks respect maximum token limits (1024 tokens) and are further split into ~128-token sub-chunks with 128-token overlap for fine-grained retrieval
 
-User query is processed using:
+### 2. Knowledge Graph Construction
 
-Local graph search (entity-level)
+Entities and relationships are extracted to build a knowledge graph:
 
-Global community search
+- **Entity Extraction**: spaCy NER model (`en_core_web_sm`) extracts entities (PERSON, ORG, GPE, WORK_OF_ART, EVENT)
+- **Relationship Extraction**: Dependency parsing identifies relationships between entities co-occurring in sentences
+- **Graph Building**: NetworkX graph is constructed with:
+  - Nodes = entities (with embeddings, chunk references, page numbers)
+  - Edges = relationships (with evidence sentences and relation types)
+- **Entity Embeddings**: Each entity is embedded using the same sentence transformer model for similarity search
 
-Retrieved knowledge is injected into an LLM prompt
+### 3. Community Detection
 
-Llama3 generates the final answer
+The knowledge graph is partitioned into thematic communities:
+
+- **Algorithm**: Louvain community detection algorithm (via `python-louvain`)
+- **Community Assignment**: Each entity node is assigned to a community based on graph structure
+- **Community Summarization**: LLM (Llama3 via Ollama) generates summaries for each community, including:
+  - Key entities and their relationships
+  - Thematic insights
+  - Evidence snippets from source chunks
+
+### 4. Retrieval Strategies
+
+Two complementary retrieval methods are implemented as per SEMRAG Equations 4 & 5:
+
+#### Local Graph RAG Search (Equation 4)
+- Query is embedded and compared against entity embeddings
+- Entities with similarity ≥ τ_e (default: 0.35) are selected
+- Chunks associated with these entities are retrieved
+- Sub-chunks with similarity ≥ τ_d (default: 0.3) are ranked and top-K returned
+
+#### Global Graph RAG Search (Equation 5)
+- Query is compared against community summary embeddings
+- Top-K communities are selected
+- All chunks within selected communities are extracted
+- Points (sub-chunks) are scored and ranked, top-K returned
+
+### 5. Answer Generation
+
+Retrieved context from both strategies is integrated:
+
+- **Prompt Engineering**: Custom templates combine:
+  - Local entity context with chunk citations
+  - Global community summaries with point-level citations
+  - User query
+- **LLM Generation**: Llama3 generates answers grounded in retrieved context
+- **Citation Tracking**: Chunk IDs are extracted and displayed for transparency
+
+### Key Design Decisions
+
+- **Fully Local**: All processing runs offline (Ollama for LLM, local embeddings)
+- **Modular Architecture**: Each component (chunking, graph, retrieval, LLM) is independently testable
+- **Configurable**: All thresholds, K values, and model parameters in `config.yaml`
+- **Error Handling**: Comprehensive error handling with clear messages for missing files, invalid configs, etc.
 
 🧪 Testing
 
@@ -199,21 +274,34 @@ pytest
 - `tests/test_retrieval.py` – Equation 4 & 5 retrieval logic with patched embeddings  
 - `tests/test_integration.py` – Answer generator prompt + citation wiring
 
-📝 Demo Script (suggested questions)
+📝 Demo Script
 
-1. “What is Dr. Ambedkar’s view on caste?”  
-2. “How did Ambedkar describe social justice?”  
-3. “Which reforms did Ambedkar advocate for education?”  
-4. “Summarize Ambedkar’s stance on liberty, equality, and fraternity.”  
-5. “Who opposed caste discrimination according to Ambedkar?”
+A standalone demo script is provided for interview demonstrations:
 
-For each, highlight the retrieved chunk IDs shown beneath the answer to demonstrate grounded reasoning.
+```bash
+python demo.py
+```
 
-⚠️ Important Interview Note
+This runs predefined questions and displays:
+- Retrieved local entities and global communities
+- Generated answers with citations
+- Retrieval statistics
 
-The system is designed to run fully offline and must run live during the technical interview.
+The script processes these questions:
+1. "What is Dr. Ambedkar's view on caste?"
+2. "What did Ambedkar say about social justice?"
+3. "Who opposed caste discrimination?"
+4. "What is endogamy according to Ambedkar?"
+5. "How did Ambedkar describe social justice?"
+6. "Which reforms did Ambedkar advocate for education?"
+7. "Summarize Ambedkar's stance on liberty, equality, and fraternity."
 
-Failure to demonstrate execution locally may lead to disqualification.
+Alternatively, use the interactive CLI mode:
+```bash
+python -m src.pipeline.ambedkargpt run
+```
+
+For each question, the system highlights retrieved chunk IDs shown beneath the answer to demonstrate grounded reasoning.
 
 👨‍💻 Author
 

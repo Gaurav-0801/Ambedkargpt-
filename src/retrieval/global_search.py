@@ -9,22 +9,49 @@ import numpy as np
 import yaml
 from sentence_transformers import SentenceTransformer
 
-from retrieval.ranker import to_vector
+from src.retrieval.ranker import to_vector
 
 
 def load_config(path: Path) -> Dict[str, Any]:
-    with path.open("r", encoding="utf-8") as fh:
-        return yaml.safe_load(fh)
+    if not path.exists():
+        raise FileNotFoundError(f"Config file not found: {path}")
+    try:
+        with path.open("r", encoding="utf-8") as fh:
+            config = yaml.safe_load(fh)
+            if not config:
+                raise ValueError(f"Config file is empty or invalid: {path}")
+            return config
+    except yaml.YAMLError as e:
+        raise ValueError(f"Failed to parse YAML config file {path}: {e}") from e
+    except Exception as e:
+        raise RuntimeError(f"Error loading config from {path}: {e}") from e
 
 
 def load_graph(path: Path):
-    with path.open("rb") as fh:
-        return pickle.load(fh)
+    if not path.exists():
+        raise FileNotFoundError(f"Graph file not found: {path}. Run 'python -m src.pipeline.ambedkargpt build-graph' first.")
+    try:
+        with path.open("rb") as fh:
+            return pickle.load(fh)
+    except pickle.UnpicklingError as e:
+        raise ValueError(f"Failed to unpickle graph file {path}: {e}") from e
+    except Exception as e:
+        raise RuntimeError(f"Error loading graph from {path}: {e}") from e
 
 
 def load_chunks(path: Path) -> Dict[str, Any]:
-    with path.open("r", encoding="utf-8") as fh:
-        return json.load(fh)
+    if not path.exists():
+        raise FileNotFoundError(f"Chunks file not found: {path}. Run 'python -m src.pipeline.ambedkargpt chunk' first.")
+    try:
+        with path.open("r", encoding="utf-8") as fh:
+            data = json.load(fh)
+            if "sub_chunks" not in data:
+                raise ValueError(f"Invalid chunks file format: missing 'sub_chunks' key in {path}")
+            return data
+    except json.JSONDecodeError as e:
+        raise ValueError(f"Failed to parse JSON chunks file {path}: {e}") from e
+    except Exception as e:
+        raise RuntimeError(f"Error loading chunks from {path}: {e}") from e
 
 
 def load_reports(path: Path) -> List[Dict[str, Any]]:
@@ -36,21 +63,47 @@ def load_reports(path: Path) -> List[Dict[str, Any]]:
 
 
 class GlobalGraphRAG:
+    """
+    Implements Global Graph RAG Search (Equation 5 from SEMRAG paper).
+    
+    Equation 5: D_retrieved = Top_k(⋃_{r ∈ R_Top-K(Q)} ⋃_{c_i ∈ C_r} (⋃_{p_j ∈ c_i} (p_j, score(p_j, Q))), score(p_j, Q))
+    
+    Where:
+    - R_Top-K(Q): top-K communities relevant to query Q
+    - C_r: chunks within community r
+    - p_j: points (sub-chunks) within chunks
+    - score(p_j, Q): similarity score between point and query
+    """
     def __init__(self, config_path: Path = Path("config.yaml")) -> None:
-        cfg = load_config(config_path)
-        self.paths = cfg["paths"]
-        self.retrieval_cfg = cfg["retrieval"]
-        self.emb_cfg = cfg.get("embeddings", {})
+        try:
+            cfg = load_config(config_path)
+            if "paths" not in cfg:
+                raise ValueError("Config missing 'paths' section")
+            if "retrieval" not in cfg:
+                raise ValueError("Config missing 'retrieval' section")
+            if "embeddings" not in cfg:
+                raise ValueError("Config missing 'embeddings' section")
+            self.paths = cfg["paths"]
+            self.retrieval_cfg = cfg["retrieval"]
+            self.emb_cfg = cfg.get("embeddings", {})
 
-        self.graph = load_graph(Path(self.paths["graph"]))
-        chunk_data = load_chunks(Path(self.paths["chunks"]))
-        self.sub_chunks = chunk_data["sub_chunks"]
-        self.reports = load_reports(Path(self.paths["community_reports"]))
+            self.graph = load_graph(Path(self.paths["graph"]))
+            chunk_data = load_chunks(Path(self.paths["chunks"]))
+            if not chunk_data.get("sub_chunks"):
+                raise ValueError(f"No sub_chunks found in {self.paths['chunks']}")
+            self.sub_chunks = chunk_data["sub_chunks"]
+            self.reports = load_reports(Path(self.paths["community_reports"]))
+            if not self.reports:
+                raise ValueError(f"No community reports found. Run 'python -m src.pipeline.ambedkargpt summarize-communities' first.")
 
-        self.model = SentenceTransformer(cfg["embeddings"]["sentence_model"])
+            self.model = SentenceTransformer(cfg["embeddings"]["sentence_model"])
 
-        self.community_embeddings = self._prepare_community_embeddings()
-        self.community_chunks = self._map_community_chunks()
+            self.community_embeddings = self._prepare_community_embeddings()
+            self.community_chunks = self._map_community_chunks()
+        except (FileNotFoundError, ValueError, RuntimeError) as e:
+            raise
+        except Exception as e:
+            raise RuntimeError(f"Error initializing GlobalGraphRAG: {e}") from e
 
     def _prepare_community_embeddings(self) -> Dict[int, np.ndarray]:
         embeddings = {}
